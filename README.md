@@ -1,0 +1,1 @@
+This is a very simple test to introduce myself to require.js (http://requirejs.org/) and figure out how to use it with scrolling events, pjax, and the APMPlayer.
