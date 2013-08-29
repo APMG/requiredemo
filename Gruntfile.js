@@ -11,13 +11,34 @@ module.exports = function (grunt) {
                 options: {
                     mainConfigFile: "js/init.js",
                     out: "js/init.min.js",
-                    generateSourceMaps: true,
+                    generateSourceMaps: false,
                     preserveLicenseComments: false,
                     optimize: "uglify2",
+                    skipModuleInsertion: false,
                     name: "init",
                     baseUrl: "js/",
                 }
             }
+        },
+
+        //compress(uglify) require.js itself
+        uglify: {
+            requirejs: {
+                files: {
+                    'js/vendor/require.min.js': ['js/vendor/requirejs/require.js']
+                }
+            }
+        },
+
+
+        concat: {
+            options: {
+                separator: ';',
+            },
+            deploy: {
+                src: ['js/vendor/require.min.js', 'js/init.min.js'],
+                dest: 'js/all.libs.min.js',
+            },
         },
 
         // Build modernizr
@@ -99,8 +120,10 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-requirejs');
     grunt.loadNpmTasks('grunt-modernizr');
     grunt.loadNpmTasks('grunt-bower-task');
+    grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
 
-    grunt.registerTask('deploy', ['jshint', 'sass:deploy', 'requirejs', 'modernizr']);
+    grunt.registerTask('deploy', ['jshint', 'sass:deploy', 'requirejs', 'modernizr', 'uglify:requirejs', 'concat:deploy']);
 
     grunt.registerTask('default', ['jshint', 'sass:dev']);
 
