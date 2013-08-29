@@ -2,6 +2,9 @@
 //
 // Configure loading modules from the base directory,
 // except 'app' ones, 
+ 
+"use strict";
+
 requirejs.config({
 		"baseUrl": "/",
 		"paths": {
