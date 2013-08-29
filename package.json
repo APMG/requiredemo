@@ -1,0 +1,25 @@
+{
+  "name": "require",
+  "version": "0.0.0",
+  "description": "test project",
+  "main": "Gruntfile.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/APMG/requiredemo.git"
+  },
+  "author": "justin heideman",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "59f7f93a6bc7cff8210ed415c72efc383cebf4b4",
+  "dependencies": {},
+  "devDependencies": {
+    "requirejs": "*",
+    "grunt": "0.4.x",
+    "grunt-contrib-jshint": "git://github.com/gruntjs/grunt-contrib-jshint.git",
+    "grunt-contrib-requirejs": "git://github.com/gruntjs/grunt-contrib-requirejs.git",
+    "grunt-contrib-sass": "git://github.com/gruntjs/grunt-contrib-sass.git",
+    "grunt-contrib-watch": "git://github.com/gruntjs/grunt-contrib-watch.git",
+    "grunt-modernizr": "git://github.com/doctyper/grunt-modernizr.git",
+    "grunt-bower-task": "~0.3.1"
+  }
+}
