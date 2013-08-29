@@ -9,13 +9,13 @@ module.exports = function (grunt) {
         requirejs: {
             compile: {
                 options: {
-                    baseUrl: ".",
                     mainConfigFile: "js/init.js",
+                    out: "js/init.min.js",
                     generateSourceMaps: true,
                     preserveLicenseComments: false,
                     optimize: "uglify2",
-                    name: "js/init",
-                    out: "js/init.min.js",
+                    name: "init",
+                    baseUrl: "js/",
                 }
             }
         },
