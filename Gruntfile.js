@@ -14,12 +14,12 @@ module.exports = function (grunt) {
                     generateSourceMaps: true,
                     preserveLicenseComments: false,
                     optimize: "uglify2",
-                    name: "init"
+                    name: "app/main"
                 }
             }
         },
 
-                // Build modernizr
+        // Build modernizr
         modernizr: {
             devFile: 'js/vendor/modernizr/modernizr.js',
             outputFile : 'js/vendor/modernizr.min.js',

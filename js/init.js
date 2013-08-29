@@ -1,9 +1,9 @@
-// Place third party dependencies in the lib folder
+// Place third party dependencies in the vendor folder
 //
-// Configure loading modules from the lib directory,
+// Configure loading modules from the base directory,
 // except 'app' ones, 
 requirejs.config({
-		"baseUrl": "js/lib",
+		"baseUrl": "/",
 		"paths": {
 			"app": "../app",
 			"jquery": "vendor/jquery/jquery",
@@ -24,4 +24,4 @@ requirejs.config({
 });
 
 // Load the main app module to start the app
-requirejs(["app/main"]);
+//requirejs(["app/main"]);
