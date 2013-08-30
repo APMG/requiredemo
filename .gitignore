@@ -3,9 +3,9 @@
 
 node_modules
 .DS_Store
-/js/vendor/**
-/js/*.min*
-/css/*.css
+/public_html/js/vendor/**
+/public_html/js/*.min*
+/public_html/css/*.css
 
 # Composer #
 /vendor/**
