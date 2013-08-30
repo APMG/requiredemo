@@ -1,0 +1,22 @@
+# Apache configuration file
+# httpd.apache.org/docs/2.2/mod/quickreference.html
+
+# Note .htaccess files are an overhead, this logic should be in your Apache
+# config if possible: httpd.apache.org/docs/2.2/howto/htaccess.html
+
+# Techniques in here adapted from HTML5 Boilerplate
+# https://github.com/h5bp/html5-boilerplate/blob/master/.htaccess
+
+# ----------------------------------------------------------------------
+# Start rewrite engine
+# http://www.slimframework.com/documentation/stable#routing-indepth-with-rewrite
+# ----------------------------------------------------------------------
+
+RewriteEngine On
+
+#alllows versioning of files in css and js dir
+# RewriteRule ^assets/js/(\w*)\.([0-9]+).js$ /assets/js/$1.js [L]
+# RewriteRule ^assets/css/(\w*)\.([0-9]+).css$ /assets/css/$1.css [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php [QSA,L]
