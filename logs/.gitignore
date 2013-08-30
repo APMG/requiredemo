@@ -1,0 +1,5 @@
+# Ignore everything in this directory
+# Contents of this dir should be managed by composer / bower
+*
+# Except this file
+!.gitignore
