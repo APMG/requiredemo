@@ -9,14 +9,14 @@ module.exports = function (grunt) {
         requirejs: {
             compile: {
                 options: {
-                    mainConfigFile: "js/init.js",
-                    out: "js/init.min.js",
+                    mainConfigFile: "public_html/js/init.js",
+                    out: "public_html/js/init.min.js",
                     generateSourceMaps: false,
                     preserveLicenseComments: false,
                     optimize: "uglify2",
                     skipModuleInsertion: false,
                     name: "init",
-                    baseUrl: "js/",
+                    baseUrl: "public_html/js/",
                 }
             }
         },
@@ -25,7 +25,7 @@ module.exports = function (grunt) {
         uglify: {
             requirejs: {
                 files: {
-                    'js/vendor/require.min.js': ['js/vendor/requirejs/require.js']
+                    'public_html/js/require.min.js': ['vendor/requirejs/require.js']
                 }
             }
         },
@@ -36,15 +36,15 @@ module.exports = function (grunt) {
                 separator: ';',
             },
             deploy: {
-                src: ['js/vendor/require.min.js', 'js/init.min.js'],
-                dest: 'js/all.libs.min.js',
+                src: ['public_html/js/require.min.js', 'public_html/js/init.min.js'],
+                dest: 'public_html/js/all.libs.min.js',
             },
         },
 
         // Build modernizr
         modernizr: {
-            devFile: 'js/vendor/modernizr/modernizr.js',
-            outputFile : 'js/vendor/modernizr.min.js',
+            devFile: 'vendor/modernizr/modernizr.js',
+            outputFile : 'public_html/js/modernizr.min.js',
 
             extra: {
                 shiv: true,
@@ -55,14 +55,14 @@ module.exports = function (grunt) {
             uglify: true,
 
             // Files
-            files: ['js/init.js', 'js/app/*.js', 'scss/**/*.scss']
+            files: ['public_html/js/init.js', 'public_html/js/app/*.js', 'scss/**/*.scss']
         },
 
         jshint: {
             all: [
                 'Gruntfile.js',
-                'js/init.js',
-                'js/app/*.js'
+                'public_html/js/init.js',
+                'public_html/js/app/*.js'
 
             ],
             options: {
@@ -77,7 +77,7 @@ module.exports = function (grunt) {
                     style: 'expanded'
                 },
                 files: {
-                    'css/main.css': 'scss/main.scss'
+                    'public_html/css/main.css': 'scss/main.scss'
                 }
             },
             deploy: {
@@ -85,7 +85,7 @@ module.exports = function (grunt) {
                     style: 'compressed'
                 },
                 files: {
-                    'css/main.min.css': 'scss/main.scss'
+                    'public_html/css/main.min.css': 'scss/main.scss'
                 }
 
             }
@@ -101,8 +101,8 @@ module.exports = function (grunt) {
             js: {
                 files: [
                     'Gruntfile.js',
-                    'js/init.js',
-                    'js/app/*.js'
+                    'public_html/js/init.js',
+                    'public_html/js/app/*.js'
                 ],
                 tasks: 'jshint'
             }

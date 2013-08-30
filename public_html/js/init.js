@@ -9,8 +9,8 @@ requirejs.config({
 		"baseUrl": "js/",
 		"paths": {
 			"app": "app",
-			"jquery": "vendor/jquery/jquery",
-			"jquery-pjax": "vendor/jquery-pjax/jquery.pjax",
+			"jquery": "../../vendor/jquery/jquery",
+			"jquery-pjax": "../../vendor/jquery-pjax/jquery.pjax",
 			'soundmanager2': '//common.publicradio.org/media_player/1.2.2/script/lib/soundmanager2-jsmin',
 			'apmplayer': '//common.publicradio.org/media_player/1.2.2/script/apmplayer-all.min'
 		},
