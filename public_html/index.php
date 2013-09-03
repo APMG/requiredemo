@@ -4,7 +4,6 @@ define('APP_ROOT', realpath( dirname(dirname( __FILE__ ) ).'/'));
 
 require APP_ROOT . '/vendor/autoload.php';
 require APP_ROOT . '/app/config/config.php';
-require APP_ROOT . '/app/lib/helpers.php';
 require APP_ROOT . '/app/lib/MPRPjaxRequest.php';
 
 
@@ -19,9 +18,14 @@ $app->container->singleton('request', function () {
     return new \MPRPjaxRequest\Request($env);
 });
 
+require APP_ROOT . '/app/lib/helpers.php';
 
 // Load Application Configuration
 $app->config($config);
+
+// Populate addtional variables for use in our smarty templates. See lib/helpers.php.
+$app->hook('slim.before', 'set_application_variables');
+
 
 // Set up smarty paths (this does not use MPR Smarty, yet)
 $view = $app->view();

@@ -1,16 +1,27 @@
 <?php
 
 
+$app->get('/page/:id/', function ($id) use ($app) {
+	$data = array( 
+		'isPjax'=> $app->request->isPjax(), // this should be moved into a custom view subclass at some point
+		'test' => 'test',
+		'id' => $id
+	);	
+
+    $app->render('page.tpl', $data);
+});
+
+
+
+
+
 $app->get('/', function () use ($app) {
+	$data = array( 
+		'isPjax'=> $app->request->isPjax(), // this should be moved into a custom view subclass at some point
+	);	
 
-
-    $app->render('default.tpl', array('yeah'=>'yeah'));
-
-
+    $app->render('index.tpl', $data);
 });
 
 
 
-$app->get('/hello/:name', function ($name) {
-    echo "Hello, $name";
-});
