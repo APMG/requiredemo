@@ -2,7 +2,7 @@
 
 
 $app->get('/', function () use ($app) {
-    //var_dump($app);
+
 
     $app->render('default.tpl', array('yeah'=>'yeah'));
 
