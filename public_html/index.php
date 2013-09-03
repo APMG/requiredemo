@@ -1,11 +1,29 @@
 <?php
-require '../vendor/autoload.php';
+// Set Application Root to this directory's parent
+define('APP_ROOT', realpath( dirname(dirname( __FILE__ ) ).'/'));
 
+require APP_ROOT . '/vendor/autoload.php';
+require APP_ROOT . '/app/config/config.php';
 
-$app = new \Slim\Slim();
+$app = new \Slim\Slim(array(
+	    'view' => new \Slim\Views\Smarty(),
+	));
 
-$app->get('/hello/:name', function ($name) {
-    echo "Hello, $name";
-});
+// Load Application Configuration
+$app->config($config);
+
+// Set up smarty paths (this does not use MPR Smarty, yet)
+$view = $app->view();
+$view->parserDirectory = dirname(__FILE__) . 'smarty';
+$view->parserCompileDirectory = '/tmp/requiredemo/smarty-compile';
+$view->parserCacheDirectory = '/tmp/requiredemo/smarty-cache';
+$app->smartyTemplatesDirectory = dirname(__FILE__) . '/app/templates';
+
+// Load routes here
+// this should get replaced with some autoloader class thing at some point
+require APP_ROOT . '/app/routes/default.php';
 
 $app->run();
+
+?>
+

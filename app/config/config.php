@@ -1,5 +1,9 @@
 <?php
 $config = array(
     'debug' => true,
-    'templates.path' => '../templates'
+    'templates.path' => '../app/templates',
+    'app.path' => dirname($_SERVER['DOCUMENT_ROOT']) . '/app',
+    'site.name'  => 'Require js demo project',
+
 );
+
