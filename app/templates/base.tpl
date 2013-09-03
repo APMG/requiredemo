@@ -14,16 +14,14 @@
         <link rel="stylesheet" href="/css/normalize.css">
         <link rel="stylesheet" href="/css/main.css">
         <script src="/js/modernizr.min.js"></script>
-
-   <script src="/js/all.libs.min.js"></script> 
-
-
-
+        <script src="/js/all.libs.min.js"></script> 
+        
     </head>
     <body>
             <a href="/">Home</a>  
             <a href="/page/1/">Page 1</a> 
             <a href="/page/2/">Page 2</a>  
+            <a href="/page/33/">Page 33</a>  
             <a href="javascript:void(0)" id="mediaPlayer">Fake media player</a>
 
         <div id='pjax-container'>

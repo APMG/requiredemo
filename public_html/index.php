@@ -5,11 +5,12 @@ define('APP_ROOT', realpath( dirname(dirname( __FILE__ ) ).'/'));
 require APP_ROOT . '/vendor/autoload.php';
 require APP_ROOT . '/app/config/config.php';
 require APP_ROOT . '/app/lib/MPRPjaxRequest.php';
+require APP_ROOT . '/app/lib/MPRPjaxSmarty.php';
 
 
 
 $app = new \Slim\Slim(array(
-	'view' => new \Slim\Views\Smarty(),
+	'view' => new \MPRPjaxSmarty\Smarty(),
 ));
 
 // Use MPR custom request object to add Pjax detection
