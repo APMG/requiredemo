@@ -41,3 +41,12 @@ Run grunt at least once to compile scss and js files:
      
       grunt
       
+Depending on your local environment, you'll need to change apache to point at the public_html/ folder in this package. Apache should read index.php as the directory index file. 
+
+
+Development
+-----------
+You can and should use grunt to watch files during development. Grunt will recompile js and scss/css changes as you make them. To put grunt into watch mode, run:
+      
+       grunt watch
+       
