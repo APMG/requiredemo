@@ -46,7 +46,7 @@ Depending on your local environment, you'll need to change apache to point at th
 
 Development
 -----------
-You can and should use grunt to watch files during development. Grunt will recompile js and scss/css changes as you make them. To put grunt into watch mode, run:
+You can and should use grunt to watch files during development. Grunt will recompile js and scss/css changes as you make them. This also uses livereload to reload the page in the browser as changes are made. *NOTE: right now, it does not reload on changes to php/tpl files* To put grunt into watch mode, run: 
       
        grunt watch
        

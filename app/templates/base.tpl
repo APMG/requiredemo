@@ -25,6 +25,10 @@
 
         <script src="/vendor/modernizr/modernizr.js"></script>
         <script data-main='js/init' src="/vendor/requirejs/require.js"></script> 
+
+        <!-- only used with local development -->
+        <script src="http://localhost:35729/livereload.js"></script>
+    
     {/if}
 
     </head>
