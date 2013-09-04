@@ -1,10 +1,12 @@
-This is a very simple test to introduce myself to require.js (http://requirejs.org/) and figure out how to use it with scrolling events, pjax, and the APMPlayer.
+This is at test project to introduce myself to require.js, grunt, bower, composer, and other deploy / architecture tricks. We are planning to use these tools to facilitate the MPRNews redesign. 
+
 
 Setup
 =====
 
 Pre-requisites
 --------------
+* Local apache server with php 5.3 or higher, php 5.4.x preferred
 * [node / npm](http://nodejs.org/download/)
 * [composer](http://getcomposer.org/download/)
   
@@ -46,7 +48,22 @@ Depending on your local environment, you'll need to change apache to point at th
 
 Development
 -----------
-You can and should use grunt to watch files during development. Grunt will recompile js and scss/css changes as you make them. This also uses livereload to reload the page in the browser as changes are made. *NOTE: right now, it does not reload on changes to php/tpl files* To put grunt into watch mode, run: 
+You can and should use grunt to watch files during development. Grunt will recompile js and scss/css changes as you make them. This also uses livereload to reload the page in the browser as changes are made.  To put grunt into watch mode, run: 
       
        grunt watch
        
+**NOTE: Presently, grunt does not reload on changes to php/tpl files**       
+
+
+Production mode
+---------------
+If you want to simulate 'production' mode on your local environment, where scripts and css are minified and concatenated, first you'll need to compile all the scripts and css files:
+     
+      grunt deploy
+
+Then change the `SLIM_MODE` in public/.htaccess:
+
+    SetEnv SLIM_MODE production 
+
+Be careful not to commit this change to version unless intended.
+
