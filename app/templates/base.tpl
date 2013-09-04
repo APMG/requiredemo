@@ -4,11 +4,11 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
         <title>{block name=title} | {$site_title}{/block}</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width" />
 
 
     {if $environment == 'production'}
@@ -33,16 +33,30 @@
 
     </head>
     <body>
+
+        <nav id="mprnews-nav">
             <a href="/">Home</a>  
             <a href="/page/1/">Page 1</a> 
             <a href="/page/2/">Page 2</a>  
             <a href="/page/33/">Page 33</a>  
             <a href="javascript:void(0)" id="mediaPlayer">Fake media player</a>
+        </nav>
+        <nav id="mprnews-audio">
+        </nav>
 
-        <div id='pjax-container'>
-    	{block name='pjax-container'}{/block}
-    	</div>
+        <section id='mprnews-content'>
 
+            <div id='pjax-container'>
+        	{block name='pjax-container'}{/block}
+        	</div>
+
+        </section>
+
+        <aside id='mprnews-footer'>
+        </aside>
+
+        <footer id="mpr-footer">
+        </footer>
 
     </body>
 </html>

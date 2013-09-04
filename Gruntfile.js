@@ -66,7 +66,7 @@ module.exports = function (grunt) {
             uglify: true,
 
             // Files
-            files: ['public_html/js/init.js', 'public_html/js/app/*.js', 'scss/**/*.scss']
+            files: ['public_html/js/init.js', 'public_html/js/app/*.js', 'app/scss/**/*.scss']
         },
 
         jshint: {
@@ -89,8 +89,8 @@ module.exports = function (grunt) {
                     style: 'expanded'
                 },
                 files: {
-                    'public_html/css/main.css': 'scss/main.scss',
-                    'public_html/css/ie8_compat.css': 'scss/ie8_compat.scss'
+                    'public_html/css/main.css': 'app/scss/main.scss',
+                    'public_html/css/ie8_compat.css': 'app/scss/ie8_compat.scss'
                 }
             },
             deploy: {
@@ -99,8 +99,8 @@ module.exports = function (grunt) {
                     style: 'compressed'
                 },
                 files: {
-                    'public_html/css/main.min.css': 'scss/main.scss',
-                    'public_html/css/ie8_compat.min.css': 'scss/ie8_compat.scss'
+                    'public_html/css/main.min.css': 'app/scss/main.scss',
+                    'public_html/css/ie8_compat.min.css': 'app/scss/ie8_compat.scss'
                 }
 
             }
@@ -111,7 +111,7 @@ module.exports = function (grunt) {
                 livereload: true,
             },
             scss: {
-                files: ['scss/**/*.scss'],
+                files: ['app/scss/**/*.scss'],
                 tasks: 'sass:dev'
                 
             },
