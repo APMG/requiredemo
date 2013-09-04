@@ -7,6 +7,9 @@
 # Techniques in here adapted from HTML5 Boilerplate
 # https://github.com/h5bp/html5-boilerplate/blob/master/.htaccess
 
+
+SetEnv SLIM_MODE development 
+
 # ----------------------------------------------------------------------
 # Start rewrite engine
 # http://www.slimframework.com/documentation/stable#routing-indepth-with-rewrite

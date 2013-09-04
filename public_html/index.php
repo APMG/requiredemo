@@ -3,11 +3,19 @@
 define('APP_ROOT', realpath( dirname(dirname( __FILE__ ) ).'/'));
 
 require APP_ROOT . '/vendor/autoload.php';
-require APP_ROOT . '/app/config/config.php';
 require APP_ROOT . '/app/lib/MPRPjaxRequest.php';
 require APP_ROOT . '/app/lib/MPRPjaxSmarty.php';
 
 
+// Set application mode based on environment setting in .htaccess
+// http://docs.slimframework.com/pages/configure-modes/
+if (getenv('SLIM_MODE') !== 'production') {
+    require APP_ROOT . '/app/config/config.'.getenv('SLIM_MODE').'.php';
+    error_reporting(E_ALL & ~E_NOTICE);
+} else {
+    require APP_ROOT . '/app/config/config.production.php';
+    error_reporting(0);
+}
 
 $app = new \Slim\Slim(array(
 	'view' => new \MPRPjaxSmarty\Smarty(),

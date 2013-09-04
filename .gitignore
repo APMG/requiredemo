@@ -1,10 +1,10 @@
 *.sass-cache
 *.sublime-*
 
-# Grunt and js build things #
-#############################
+# Grunt and bower js build things #
+###################################
 node_modules
-/public_html/js/vendor/**
+/public_html/vendor/**
 /public_html/js/*.min*
 /public_html/css/*.css
 

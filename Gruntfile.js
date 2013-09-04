@@ -2,6 +2,18 @@ module.exports = function (grunt) {
 
     'use strict';
 
+    // Register various packages/tasks we're going to use
+    grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-requirejs');
+    grunt.loadNpmTasks('grunt-modernizr');
+    //grunt.loadNpmTasks('grunt-bower-task');
+    grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-notify');
+
+
     // Project configuration.
     grunt.initConfig({
         pkg: require('./package'),
@@ -25,11 +37,10 @@ module.exports = function (grunt) {
         uglify: {
             requirejs: {
                 files: {
-                    'public_html/js/require.min.js': ['vendor/requirejs/require.js']
+                    'public_html/js/require.min.js': ['public_html/vendor/requirejs/require.js']
                 }
             }
         },
-
 
         concat: {
             options: {
@@ -43,7 +54,7 @@ module.exports = function (grunt) {
 
         // Build modernizr
         modernizr: {
-            devFile: 'vendor/modernizr/modernizr.js',
+            devFile: 'public_html/vendor/modernizr/modernizr.js',
             outputFile : 'public_html/js/modernizr.min.js',
 
             extra: {
@@ -73,6 +84,7 @@ module.exports = function (grunt) {
         sass: {
             dev: {
                 options: {
+                    cacheLocation: '/tmp/require/sass-cache',
                     unixNewlines: true,
                     style: 'expanded'
                 },
@@ -82,6 +94,7 @@ module.exports = function (grunt) {
             },
             deploy: {
                 options: {
+                    cacheLocation: '/tmp/require/sass-cache',
                     style: 'compressed'
                 },
                 files: {
@@ -92,11 +105,14 @@ module.exports = function (grunt) {
         },
 
         watch: {
-
             scss: {
                 files: ['scss/**/*.scss'],
                 tasks: 'sass:dev'
             },
+            // tpl: {
+            //     files: ['app/*'],
+            //     tasks: 
+            // },
 
             js: {
                 files: [
@@ -106,23 +122,18 @@ module.exports = function (grunt) {
                 ],
                 tasks: 'jshint'
             }
-        } ,
-        bower: {
-          install: {
-            //just run 'grunt bower:install' and you'll see files from your Bower packages in lib directory
-          }
-        }
+        },
+
+        // bower: {
+        //   install: {
+        //     options: {
+        //         targetDir : 'public_html/vendor'
+        //     }
+        //     //just run 'grunt bower:install' and you'll see files from your Bower packages in lib directory
+        //   }
+        // }
     });
 
-    grunt.loadNpmTasks('grunt-contrib-jshint');
-    grunt.loadNpmTasks('grunt-contrib-sass');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-requirejs');
-    grunt.loadNpmTasks('grunt-modernizr');
-    grunt.loadNpmTasks('grunt-bower-task');
-    grunt.loadNpmTasks('grunt-contrib-concat');
-    grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-notify');
 
     grunt.registerTask('deploy', ['jshint', 'sass:deploy', 'requirejs', 'modernizr', 'uglify:requirejs', 'concat:deploy']);
 

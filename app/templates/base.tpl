@@ -11,11 +11,22 @@
         <meta name="viewport" content="width=device-width">
 
 
-        <link rel="stylesheet" href="/css/normalize.css">
-        <link rel="stylesheet" href="/css/main.css">
-        <script src="/js/modernizr.min.js"></script>
-        <script src="/js/all.libs.min.js"></script> 
-        
+    {if $environment == 'production'}
+        <link rel="stylesheet" href="/css/normalize.{$site_version}.css">
+        <link rel="stylesheet" href="/css/main.{$site_version}.css">   
+
+        <script src="/js/modernizr.min.{$site_version}.js"></script>
+        <script src="/js/all.libs.min.{$site_version}.js"></script> 
+
+    {else}
+
+        <link rel="stylesheet" href="/vendor/normalize-css/normalize.css">
+        <link rel="stylesheet" href="/css/main.css">   
+
+        <script src="/vendor/modernizr/modernizr.js"></script>
+        <script data-main='js/init' src="/vendor/requirejs/require.js"></script> 
+    {/if}
+
     </head>
     <body>
             <a href="/">Home</a>  
