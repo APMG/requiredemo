@@ -91,6 +91,7 @@ module.exports = function (grunt) {
                 files: {
                     'public_html/css/main.css': 'app/scss/main.scss',
                     'public_html/css/ie8_compat.css': 'app/scss/ie8_compat.scss'
+
                 }
             },
             deploy: {

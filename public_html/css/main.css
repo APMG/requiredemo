@@ -469,9 +469,6 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-/* ==========================================================================
    Helper classes
    ========================================================================== */
 /*
@@ -558,28 +555,10 @@ textarea {
   clear: both;
 }
 
-/*
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-.clearfix {
-  *zoom: 1;
-}
-
 body {
   background-color: rgba(255, 0, 0, 0.2);
 }
 
-@media only screen and (min-width: 33.8125em) {
-  body {
-    background-color: rgba(0, 255, 0, 0.2);
-  }
-}
-@media only screen and (min-width: 52.5625em) {
-  body {
-    background-color: rgba(0, 0, 255, 0.2);
-  }
-}
 @media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }

@@ -3,21 +3,25 @@
 
 
 // various helpers, should not contain any media queries
-@import "helpers.scss";
+@import "_helpers.scss";
+@import "_color.scss";
+@import "_typography.scss";
  
+
 // phone, 0+ px 
-@import "phone.scss";
+@import "_base.scss";
+
+
 
 // tablet, starts at 541 px and up
 @media only screen and (min-width: 33.8125em){
-    @import "tablet.scss";
+    //@import "_tablet.scss";
 }
 
 // desktop, starts at 841px and up
 @media only screen and (min-width: 52.5625em){
-   @import "desktop.scss";
+   //@import "_desktop.scss";
 }
 
-
-// bring in various print rules
+// bring in various print rules, place here to avoid extra http request
 @import "print.scss"; 
