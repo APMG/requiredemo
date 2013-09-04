@@ -1,13 +1,10 @@
-
-
 // Bring in normalize css from vendor package
-@import "../public_html/vendor/normalize-css/normalize.css";
+@import "../public_html/vendor/normalize-scss/_normalize.scss";
 
 
 // various helpers, should not contain any media queries
 @import "helpers.scss";
-
-
+ 
 // phone, 0+ px 
 @import "phone.scss";
 
@@ -18,16 +15,9 @@
 
 // desktop, starts at 841px and up
 @media only screen and (min-width: 52.5625em){
-   @import "desktop.scss"; 
+   @import "desktop.scss";
 }
 
 
 // bring in various print rules
 @import "print.scss"; 
-
-
-
-
-
-
-

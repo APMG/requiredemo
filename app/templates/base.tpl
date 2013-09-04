@@ -12,16 +12,16 @@
 
 
     {if $environment == 'production'}
-        <link rel="stylesheet" href="/css/normalize.{$site_version}.css">
-        <link rel="stylesheet" href="/css/main.{$site_version}.css">   
+        <link rel="stylesheet" href="/css/main.min.{$site_version}.css" />   
+        <!--[if lt IE 8]>  <link rel="stylesheet" href="/css/ie8_compat.min{$site_version}.css" />   <![endif]-->
 
         <script src="/js/modernizr.min.{$site_version}.js"></script>
-        <script src="/js/all.libs.min.{$site_version}.js"></script> 
+        <script src="/js/all.min.{$site_version}.js"></script> 
 
     {else}
-
-        <link rel="stylesheet" href="/vendor/normalize-css/normalize.css">
-        <link rel="stylesheet" href="/css/main.css">   
+       
+        <link rel="stylesheet" href="/css/main.css" />   
+        <!--[if lt IE 8]>  <link rel="stylesheet" href="/css/ie8_compat.css" />   <![endif]-->
 
         <script src="/vendor/modernizr/modernizr.js"></script>
         <script data-main='js/init' src="/vendor/requirejs/require.js"></script> 

@@ -18,8 +18,8 @@ SetEnv SLIM_MODE development
 RewriteEngine On
 
 #alllows versioning of files in css and js dir
-# RewriteRule ^assets/js/(\w*)\.([0-9]+).js$ /assets/js/$1.js [L]
-# RewriteRule ^assets/css/(\w*)\.([0-9]+).css$ /assets/css/$1.css [L]
+RewriteRule ^js/(\w*)\.min\.([0-9]+).js$ /js/$1.min.js [L]
+RewriteRule ^css/(\w*)\.min\.([0-9]+).css$ /css/$1.min.css [L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.*)$ index.php [QSA,L]

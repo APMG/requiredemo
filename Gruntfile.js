@@ -48,7 +48,7 @@ module.exports = function (grunt) {
             },
             deploy: {
                 src: ['public_html/js/require.min.js', 'public_html/js/init.min.js'],
-                dest: 'public_html/js/all.libs.min.js',
+                dest: 'public_html/js/all.min.js',
             },
         },
 
@@ -89,7 +89,8 @@ module.exports = function (grunt) {
                     style: 'expanded'
                 },
                 files: {
-                    'public_html/css/main.css': 'scss/main.scss'
+                    'public_html/css/main.css': 'scss/main.scss',
+                    'public_html/css/ie8_compat.css': 'scss/ie8_compat.scss'
                 }
             },
             deploy: {
@@ -98,7 +99,8 @@ module.exports = function (grunt) {
                     style: 'compressed'
                 },
                 files: {
-                    'public_html/css/main.min.css': 'scss/main.scss'
+                    'public_html/css/main.min.css': 'scss/main.scss',
+                    'public_html/css/ie8_compat.min.css': 'scss/ie8_compat.scss'
                 }
 
             }
