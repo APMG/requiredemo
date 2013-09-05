@@ -13,6 +13,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-notify');
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-phpunit');
+    grunt.loadNpmTasks('grunt-exec');
 
 
     // Project configuration.
@@ -137,6 +138,18 @@ module.exports = function (grunt) {
             options: {
                 bin: 'vendor/bin/phpunit'
             }
+        },
+
+        exec: {
+            composerUpdate: {
+                cmd: 'composer update'
+            },
+            bowerUpdate: {
+                cmd: 'bower update'
+            },
+            npmUpdate: {
+                cmd: 'npm update'
+            },
         }
 
         // bower: {
@@ -154,5 +167,7 @@ module.exports = function (grunt) {
     grunt.registerTask('default', ['jshint', 'less:dev']);
 
     grunt.registerTask('test', ['phpunit']);
+
+    grunt.registerTask('update', ['exec:composerUpdate','exec:bowerUpdate','exec:npmUpdate']);
 
 };

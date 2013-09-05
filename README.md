@@ -40,6 +40,17 @@ Run grunt at least once to compile less and js files:
       
 Depending on your local environment, you'll need to change apache to point at the public_html/ folder in this package. Apache should read index.php as the directory index file. 
 
+### Project Dependencies
+
+As dependencies change throughout the project, you'll need to stay up to date. To simultaneously update dependencies for Composer, Node, and Bower, run:
+
+      grunt update
+
+This is equivalient to:
+
+      composer update
+      bower update
+      npm update
 
 Development
 -----------

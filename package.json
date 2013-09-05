@@ -24,6 +24,7 @@
     "grunt-contrib-uglify": "~0.2.2",
     "grunt-notify": "~0.2.13",
     "grunt-contrib-less": "~0.7.0",
-    "grunt-phpunit": "git://github.com/SaschaGalley/grunt-phpunit.git"
+    "grunt-phpunit": "git://github.com/SaschaGalley/grunt-phpunit.git",
+    "grunt-exec": "git://github.com/jharding/grunt-exec.git"
   }
 }
