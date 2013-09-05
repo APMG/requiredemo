@@ -34,7 +34,7 @@ Install required grunt, bower, and composer packages:
        bower install
        composer install
        
-Run grunt at least once to compile scss and js files:
+Run grunt at least once to compile less and js files:
      
       grunt
       
