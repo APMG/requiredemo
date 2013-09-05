@@ -12,6 +12,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-notify');
+    grunt.loadNpmTasks('grunt-phpunit');
 
 
     // Project configuration.
@@ -130,6 +131,15 @@ module.exports = function (grunt) {
             }
         },
 
+        phpunit: {
+            classes: {
+                dir: 'tests/'
+            },
+            options: {
+                bin: 'vendor/bin/phpunit'
+            }
+        }
+
         // bower: {
         //   install: {
         //     options: {
@@ -140,9 +150,10 @@ module.exports = function (grunt) {
         // }
     });
 
-
     grunt.registerTask('deploy', ['jshint', 'sass:deploy', 'requirejs', 'modernizr', 'uglify:requirejs', 'concat:deploy']);
 
     grunt.registerTask('default', ['jshint', 'sass:dev']);
+
+    grunt.registerTask('test', ['phpunit']);
 
 };

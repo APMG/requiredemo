@@ -70,4 +70,4 @@ Be careful not to commit this change to version unless intended.
 Testing
 -------
 
-Run `vendor/bin/phpunit` to run tests with [PHPUnit](http://phpunit.de/manual/). Currently all tests live in the `/tests/` folder.
+Run `grunt test` to run tests with [PHPUnit](http://phpunit.de/manual/). Currently all tests live in the `/tests/` folder.
