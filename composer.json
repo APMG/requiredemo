@@ -1,7 +1,15 @@
 {
+	"name": "apmg/requiredemo",
+	"description": "require.js/slim demo work for mpr news features redesign",
     "require": {
         "slim/slim": "2.*",
         "slim/views": "0.1.*",
-        "smarty/smarty": "v3.1.14"
-    }
+        "smarty/smarty": "v3.1.14",
+        "phpunit/phpunit": "3.7.*"
+    },
+    "config": {
+        "preferred-install": "dist",
+        "bin-dir": "vendor/bin"
+    },
+    "license": "proprietary"
 }
