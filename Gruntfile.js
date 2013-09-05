@@ -152,7 +152,7 @@ module.exports = function (grunt) {
         // }
     });
 
-    grunt.registerTask('deploy', ['jshint', 'sass:deploy', 'requirejs', 'modernizr', 'uglify:requirejs', 'concat:deploy']);
+    grunt.registerTask('deploy', ['phpunit', 'jshint', 'sass:deploy', 'requirejs', 'modernizr', 'uglify:requirejs', 'concat:deploy']);
 
     grunt.registerTask('default', ['jshint', 'sass:dev']);
 
