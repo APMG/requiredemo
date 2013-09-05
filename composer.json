@@ -8,6 +8,9 @@
         "phpunit/phpunit": "3.7.*",
         "sunra/php-simple-html-dom-parser": "1.5.0.*"
     },
+    "autoload": {
+        "classmap": ["app/lib/"]
+    },
     "config": {
         "preferred-install": "dist",
         "bin-dir": "vendor/bin"

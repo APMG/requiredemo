@@ -3,9 +3,6 @@
 define('APP_ROOT', realpath( dirname(dirname( __FILE__ ) ).'/'));
 
 require APP_ROOT . '/vendor/autoload.php';
-require APP_ROOT . '/app/lib/MPRPjaxRequest.php';
-require APP_ROOT . '/app/lib/MPRPjaxSmarty.php';
-
 
 // Set application mode based on environment setting in .htaccess
 // http://docs.slimframework.com/pages/configure-modes/
