@@ -6,7 +6,7 @@
     "jquery": "*",
     "jquery-pjax": "*",
     "modernizr": "*",
-    "normalize-scss": "~2.1.2"
+    "preboot": "*"
   },
   "homepage": "https://github.com/APMG/requiredemo",
   "authors": [

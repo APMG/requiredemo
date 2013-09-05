@@ -4,7 +4,6 @@ module.exports = function (grunt) {
 
     // Register various packages/tasks we're going to use
     grunt.loadNpmTasks('grunt-contrib-jshint');
-    grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-requirejs');
     grunt.loadNpmTasks('grunt-modernizr');
@@ -68,7 +67,7 @@ module.exports = function (grunt) {
             uglify: true,
 
             // Files
-            files: ['public_html/js/init.js', 'public_html/js/app/*.js', 'app/scss/**/*.scss']
+            files: ['public_html/js/init.js', 'public_html/js/app/*.js', 'app/less/**/*.less']
         },
 
         jshint: {
@@ -83,29 +82,28 @@ module.exports = function (grunt) {
             }
         },
 
-        sass: {
+        less: {
             dev: {
                 options: {
-                    cacheLocation: '/tmp/require/sass-cache',
-                    unixNewlines: true,
-                    style: 'expanded'
+                    //paths: ["/css"]
+                    dumpLineNumbers: true,
+                    relativeUrls: true
                 },
                 files: {
-                    'public_html/css/main.css': 'app/scss/main.scss',
-                    'public_html/css/ie8_compat.css': 'app/scss/ie8_compat.scss'
-
+                    'public_html/css/main.css': 'app/less/main.less',
+                    'public_html/css/ie8_compat.css': 'app/less/ie8_compat.less'
                 }
             },
             deploy: {
                 options: {
-                    cacheLocation: '/tmp/require/sass-cache',
-                    style: 'compressed'
+                    //paths: ["assets/css"],
+                    yuicompress: true,
+                    relativeUrls: true
                 },
                 files: {
-                    'public_html/css/main.min.css': 'app/scss/main.scss',
-                    'public_html/css/ie8_compat.min.css': 'app/scss/ie8_compat.scss'
+                    'public_html/css/main.min.css': 'app/less/main.less',
+                    'public_html/css/ie8_compat.min.css': 'app/less/ie8_compat.less'
                 }
-
             }
         },
 
@@ -113,10 +111,9 @@ module.exports = function (grunt) {
             options: {
                 livereload: true,
             },
-            scss: {
-                files: ['app/scss/**/*.scss'],
-                tasks: 'sass:dev'
-                
+            less: {
+                files: ['app/less/**/*.less'],
+                tasks: 'less:dev'
             },
             // tpl: {
             //     files: ['app/*'],
@@ -152,9 +149,9 @@ module.exports = function (grunt) {
         // }
     });
 
-    grunt.registerTask('deploy', ['phpunit', 'jshint', 'sass:deploy', 'requirejs', 'modernizr', 'uglify:requirejs', 'concat:deploy']);
+    grunt.registerTask('deploy', ['phpunit', 'jshint', 'less:deploy', 'requirejs', 'modernizr', 'uglify:requirejs', 'concat:deploy']);
 
-    grunt.registerTask('default', ['jshint', 'sass:dev']);
+    grunt.registerTask('default', ['jshint', 'less:dev']);
 
     grunt.registerTask('test', ['phpunit']);
 

@@ -20,11 +20,6 @@ Pre-requisites
 
         npm install -g bower
 
-* [sass](http://sass-lang.com/download.html) (requires ruby)
- 
-        gem install sass 
-
-
 
 Installation
 ------------
