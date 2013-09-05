@@ -1,27 +1,50 @@
+// Make sure the charset is set appropriately
+@charset "UTF-8";
+
 // Bring in normalize css from vendor package
-@import "../../public_html/vendor/normalize-scss/_normalize.scss";
+@import "../../public_html/vendor/normalize-scss/normalize";
+
+/* ==========================================================================
+   bring in foundation components
+   ========================================================================== */
+@import "../../public_html/vendor/foundation/scss/foundation/variables";
+
+// ==========================================================================
+// Override foundation variables with our own values from _variables.scss
+// ==========================================================================
+@import "variables";
+
+// Bring in foundation global 
+@import "../../public_html/vendor/foundation/scss/foundation/components/global"; 
 
 
 // various helpers, should not contain any media queries
-@import "_helpers.scss";
-@import "_color.scss";
-@import "_typography.scss";
+
+//@import "helpers";
+//@import "color";
+//@import "typography";
  
+// Bring in foundation global 
+@import "../../public_html/vendor/foundation/scss/foundation/components/type"; 
+
+
 
 // phone, 0+ px 
-@import "_base.scss";
+@import "base";
 
 
 
 // tablet, starts at 541 px and up
-@media only screen and (min-width: 33.8125em){
-    //@import "_tablet.scss";
+@media only screen and (min-width: emCalc(541) ){ //33.8125em
+    @import "tablet";
 }
 
 // desktop, starts at 841px and up
-@media only screen and (min-width: 52.5625em){
-   //@import "_desktop.scss";
+@media only screen and (min-width: emCalc(841) ){  //52.5625em
+   @import "desktop";
 }
 
-// bring in various print rules, place here to avoid extra http request
+/* ==========================================================================
+   bring in various print rules, place here to avoid extra http request
+   ========================================================================== */
 @import "print.scss"; 
