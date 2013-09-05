@@ -42,6 +42,8 @@ $app->smartyTemplatesDirectory = dirname(__FILE__) . '/app/templates';
 
 // Load routes here
 // this should get replaced with some autoloader class thing at some point
+// pwenzel note: Autoloading with Composer may not work here, $app->get() must be called after running `$app = new Slim`
+// we'll probably just need to manually include all separate routes here or find a way to make them into a class and/or route groups
 require APP_ROOT . '/app/routes/default.php';
 
 $app->run();
