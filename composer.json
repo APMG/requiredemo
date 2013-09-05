@@ -5,7 +5,8 @@
         "slim/slim": "2.*",
         "slim/views": "0.1.*",
         "smarty/smarty": "v3.1.14",
-        "phpunit/phpunit": "3.7.*"
+        "phpunit/phpunit": "3.7.*",
+        "fabpot/goutte": "1.0.*"
     },
     "config": {
         "preferred-install": "dist",
