@@ -148,7 +148,7 @@ module.exports = function (grunt) {
                 cmd: 'bower update'
             },
             npmUpdate: {
-                cmd: 'npm update'
+                cmd: 'npm install; npm update'
             },
         }
 
