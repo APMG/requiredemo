@@ -144,6 +144,9 @@ module.exports = function (grunt) {
             composerUpdate: {
                 cmd: 'composer update'
             },
+            composerOptimize: {
+                cmd: 'composer dump-autoload --optimize'
+            },
             bowerUpdate: {
                 cmd: 'bower update'
             },
@@ -162,7 +165,7 @@ module.exports = function (grunt) {
         // }
     });
 
-    grunt.registerTask('deploy', ['phpunit', 'jshint', 'less:deploy', 'requirejs', 'modernizr', 'uglify:requirejs', 'concat:deploy']);
+    grunt.registerTask('deploy', ['phpunit', 'jshint', 'less:deploy', 'requirejs', 'modernizr', 'uglify:requirejs', 'concat:deploy', 'exec:composerOptimize']);
 
     grunt.registerTask('default', ['jshint', 'less:dev']);
 
