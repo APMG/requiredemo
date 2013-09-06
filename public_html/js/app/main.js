@@ -21,7 +21,7 @@ define(["jquery", 'jquery-pjax'], function ($) {
             }
             
         });
-        e.preventDefault();
+        e.preventDefault();  
     });
 
 });
