@@ -6,7 +6,7 @@
 "use strict";
 
 requirejs.config({
-		"baseUrl": "js/",
+		"baseUrl": "/js/",
 		"paths": {
 			"app": "app",
 			"jquery": "../vendor/jquery/jquery",
