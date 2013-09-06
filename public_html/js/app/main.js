@@ -1,7 +1,9 @@
 define(["jquery", 'jquery-pjax'], function ($) {
     'use strict';
     //the jquery and jquery pjax has been loaded.
-    $(document).pjax('a', '#pjax-container');
+    if (Modernizr.history){
+       $(document).pjax('a', '#pjax-container');
+    }
     //fake load media player
     $('#mediaPlayer').on('click', function (e) {
         var self = this;
