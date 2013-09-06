@@ -19,9 +19,8 @@ define(["jquery", 'jquery-pjax'], function ($) {
                     $(self).text('Media player loaded');
                 });
             }
-            
         });
-        e.preventDefault();  
+        e.preventDefault();
     });
 
 });
