@@ -24,7 +24,7 @@
         <!--[if lt IE 9]>  <link rel="stylesheet" href="/css/ie8_compat.css" />   <![endif]-->
 
         <script src="/vendor/modernizr/modernizr.js"></script>
-        <script data-main='js/init' src="/vendor/requirejs/require.js"></script> 
+        <script data-main='/js/init' src="/vendor/requirejs/require.js"></script> 
 
         <!-- only used with local development -->
         <script src="http://localhost:35729/livereload.js"></script>
@@ -39,7 +39,8 @@
             <a href="/page/1/">Page 1</a> 
             <a href="/page/2/">Page 2</a>  
             <a href="/page/33/">Page 33</a>  
-            <a href="javascript:void(0)" id="mediaPlayer">Fake media player</a>
+            <a href="http://minnesota.publicradio.org/radio/services/nis/listen/live/" 
+                id="mediaPlayer">Fake media player</a>
         </nav>
         <nav id="mprnews-audio">
         </nav>
