@@ -3,7 +3,7 @@
   "version": "0.1",
   "dependencies": {
     "requirejs": "*",
-    "jquery": "*",
+    "jquery": "1.10.2",
     "jquery-pjax": "*",
     "modernizr": "*",
     "preboot": "*"
