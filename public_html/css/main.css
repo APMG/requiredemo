@@ -354,8 +354,23 @@ table {
  * Open sourced under MIT license by @mdo.
  * Some variables and mixins from Bootstrap (Apache 2 license).
  */
+* {
+  transition: margin 0.3s ease-out;
+  -webkit-transition: margin 0.3s ease-out;
+  -moz-transition: margin 0.3s ease-out;
+  -o-transition: margin 0.3s ease-out;
+}
 body {
   font-size: 14px;
+}
+a {
+  color: #00334e;
+}
+a:hover {
+  color: #00659b;
+}
+h1 {
+  font-weight: normal;
 }
 #mprnews-nav {
   width: 100%;
@@ -366,6 +381,11 @@ body {
 }
 #mprnews-content {
   padding: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+#sidebar {
+  padding: 10px;
+  background-color: #e6e6e6;
 }
 @media only screen and (min-width: 33.8125em) {
   body {
@@ -373,7 +393,24 @@ body {
   }
 }
 @media only screen and (min-width: 52.5625em) {
-  
+  #mprnews-content {
+    width: 52%;
+    margin: 0 6%;
+    float: left;
+    max-width: 730px;
+  }
+  #sidebar {
+    width: 300px;
+    margin: 0 2% 0 0;
+    float: right;
+  }
+  #sidebar ul,
+  #sidebar li {
+    list-style-type: none;
+  }
+  #sidebar ul {
+    padding-left: 0;
+  }
 }
 /* ==========================================================================
    bring in various print rules, place here to avoid extra http request

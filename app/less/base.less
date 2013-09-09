@@ -1,5 +1,23 @@
+//nice smooth transitions for resizing
+* { 
+    transition: margin .3s ease-out; 
+    -webkit-transition: margin .3s ease-out;
+    -moz-transition: margin .3s ease-out;
+    -o-transition: margin .3s ease-out;
+} 
+
 body{
 	font-size: 14px;
+}
+
+a{
+	color: @link-color;
+	&:hover{
+		color: @link-color-hover;
+	}
+}
+h1{
+	font-weight: normal;
 }
 
 
@@ -8,4 +26,10 @@ body{
 
 #mprnews-content{
 	padding: 10px;
+	font-family: @font-family-base;
+}
+
+#sidebar{
+	padding: 10px;
+	background-color: @black-10;
 }

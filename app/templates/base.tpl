@@ -35,7 +35,7 @@
     <body>
 
         <nav id="mprnews-nav">
-            <a href="/">Home</a>  
+            <a href="/" data-pjax>Home</a>  
             <a href="/page/1/" data-pjax>Page 1</a> 
             <a href="/page/2/" data-pjax>Page 2</a>  
             <a href="/page/33/" data-pjax>Page 33</a>  
@@ -45,16 +45,28 @@
         <nav id="mprnews-audio">
         </nav>
 
-        <section id='mprnews-content'>
+        <div id="wrapper">
+            <section id='mprnews-content'>
 
-            <div id='pjax-container'>
-        	{block name='pjax-container'}{/block}
-        	</div>
+                <article id='pjax-container'>
+            	{block name='pjax-container'}{/block}
+            	</article>
 
+            </section>
             <aside id="sidebar">
-            </aside>
+                <ul class="side-nav">
 
-        </section>
+                    <li class="advertisement adaptTarget adaptWide" data-adapt="mpr-ad-1" id="mpr-ad-wrapper-1">
+                    <div class="adaptSource">
+                    <h5>Sponsor</h5>
+                    <div class="ad multi" id="mpr-ad-1"><img src='http://placekitten.com/300/250' /></div>
+                    </div>
+    </li>
+
+                </ul>
+            </aside>
+        </div>
+
 
         <aside id='mprnews-footer'>
         </aside>
