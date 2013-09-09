@@ -36,9 +36,9 @@
 
         <nav id="mprnews-nav">
             <a href="/">Home</a>  
-            <a href="/page/1/">Page 1</a> 
-            <a href="/page/2/">Page 2</a>  
-            <a href="/page/33/">Page 33</a>  
+            <a href="/page/1/" data-pjax>Page 1</a> 
+            <a href="/page/2/" data-pjax>Page 2</a>  
+            <a href="/page/33/" data-pjax>Page 33</a>  
             <a href="http://minnesota.publicradio.org/radio/services/nis/listen/live/" 
                 id="mediaPlayer">Fake media player</a>
         </nav>

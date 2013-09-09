@@ -5,7 +5,16 @@ define(["jquery", 'jquery-pjax'], function ($) {
     
     // Only load pjax if html5 pushState (history) is available in this browser 
     if (Modernizr.history){
-       $(document).pjax('a', '#pjax-container');
+        $(document).pjax('[data-pjax] a, a[data-pjax]', '#pjax-container');
+        // We need to check the incoming data for any links to the site itself
+        // For now, this is just the host, but in the future it will need to look at URL patterns
+        $('#pjax-container').on('pjax:end', function(a){
+            $(a.target).find('a').each(function(){
+                if (this.host === window.location.host){
+                    $(this).attr('data-pjax','true');
+                }
+            });
+        });
     }
     //fake load media player
     $('#mediaPlayer').on('click', function (e) {
