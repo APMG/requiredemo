@@ -51,6 +51,9 @@
         	{block name='pjax-container'}{/block}
         	</div>
 
+            <aside id="sidebar">
+            </aside>
+
         </section>
 
         <aside id='mprnews-footer'>

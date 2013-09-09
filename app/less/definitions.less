@@ -1,3 +1,39 @@
 
 @brand-primary: 	#00334e;  //mpr news blue
 @brand-secondary: 	#3d8fa5;  //mpr news light blue
+
+
+@border: 2px solid @black-20;
+
+
+
+// Scaffolding
+@body-background:         #fff;
+@text-color:              @black-50;
+
+// Links
+@link-color:              @brand-primary;
+@link-color-hover:        lighten(@link-color, 15%);
+
+
+// Typography
+@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+@font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
+@font-family-base:        @font-family-sans-serif;
+
+
+
+//font formatting we want in definitions, not typography
+.copy-font(){
+   font-family: Georgia, serif,
+}
+
+.headline-font(){
+    font-family: 'PT Serif', serif;
+    font-weight: normal;
+}
+
+.label-font(){
+  font-family: 'Helvetica Neue', sans-serif;
+}
