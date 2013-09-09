@@ -110,18 +110,10 @@ module.exports = function (grunt) {
         },
 
         watch: {
-            options: {
-                livereload: true,
-            },
             less: {
                 files: ['app/less/**/*.less'],
                 tasks: 'less:dev'
             },
-            // tpl: {
-            //     files: ['app/*'],
-            //     tasks: 
-            // },
-
             js: {
                 files: [
                     'Gruntfile.js',
@@ -129,6 +121,10 @@ module.exports = function (grunt) {
                     'public_html/js/app/*.js'
                 ],
                 tasks: 'jshint'
+            },
+            livereload: {
+                options: { livereload: true },
+                files: ['public_html/js/**/*.js','public_html/css/**/*.css','app/templates/**/*.tpl' ]
             }
         },
 
