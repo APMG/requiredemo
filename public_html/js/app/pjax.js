@@ -44,6 +44,8 @@ define(["jquery", 'jquery-pjax'], function ($) {
         // For now, this is just the host, but in the future it will need to look at URL patterns
         $('#pjax-container').on('pjax:end', function(event){
             pjaxScanLinks(event.target);
+
+            // It mgiht make sense to break these functions out to seperate files and have them watch for pjax:end event
             resetAds();
             fireAnalytics();
         });
