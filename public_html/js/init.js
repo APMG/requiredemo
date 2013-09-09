@@ -26,6 +26,6 @@ requirejs.config({
         }
 });
 
-// Load the main app module to start the app
+// Load the main app modules to start the app
 requirejs(["app/pjax"]);            // handles links
 requirejs(["app/mediaplayer"]);     // handles media player
