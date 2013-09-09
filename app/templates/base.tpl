@@ -56,15 +56,22 @@
             <aside id="sidebar">
                 <ul class="side-nav">
 
-                    <li class="advertisement adaptTarget adaptWide" data-adapt="mpr-ad-1" id="mpr-ad-wrapper-1">
-                    <div class="adaptSource">
-                    <h5>Sponsor</h5>
-                    <div class="ad multi" id="mpr-ad-1"><img src='http://placekitten.com/300/250' /></div>
+                    <li class="advertisement adaptTarget adaptWide" 
+                        data-adapt="mpr-ad-1" id="mpr-ad-wrapper-1">
+                        <div class="adaptSource">
+                            <h5>Sponsor</h5>
+                            <div class="ad multi" id="mpr-ad-1">
+                                <img src='http://placekitten.com/300/250' />
+                            </div>
                     </div>
-    </li>
+                    </li>
 
                 </ul>
             </aside>
+            <nav id='paginators'>
+                <a id='prev'></a>
+                <a id='next'></a>
+            </nav>
         </div>
 
 
