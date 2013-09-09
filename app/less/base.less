@@ -8,6 +8,7 @@
 
 body{
 	font-size: 14px;
+	line-height: 1.4;
 }
 
 a{
@@ -18,18 +19,25 @@ a{
 }
 h1{
 	font-weight: normal;
+	margin-top: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    .headline-font();
+    line-height: 1.2;
 }
 
 
 @import "nav-base.less";
 
+#wrapper{
+	padding: 10px;
+}
 
 #mprnews-content{
-	padding: 10px;
 	font-family: @font-family-base;
 }
 
 #sidebar{
 	padding: 10px;
-	background-color: @black-10;
+	//background-color: @black-10;
 }

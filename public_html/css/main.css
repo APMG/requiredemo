@@ -362,6 +362,7 @@ table {
 }
 body {
   font-size: 14px;
+  line-height: 1.4;
 }
 a {
   color: #00334e;
@@ -371,6 +372,17 @@ a:hover {
 }
 h1 {
   font-weight: normal;
+  margin-top: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'PT Serif', serif;
+  font-weight: normal;
+  line-height: 1.2;
 }
 #mprnews-nav {
   width: 100%;
@@ -379,24 +391,28 @@ h1 {
   border-bottom: 2px solid #cccccc;
   text-align: center;
 }
-#mprnews-content {
+#wrapper {
   padding: 10px;
+}
+#mprnews-content {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 #sidebar {
   padding: 10px;
-  background-color: #e6e6e6;
 }
 @media only screen and (min-width: 33.8125em) {
   body {
     font-size: 18px;
+  }
+  #wrapper {
+    padding: 20px;
   }
   #paginators a {
     position: fixed;
     display: block;
     background-color: #e4ebed;
     height: 120px;
-    width: 20px;
+    width: 15px;
     top: 45%;
     transition: width 200ms, height 100ms, background-color 100ms, top 100ms linear;
   }
@@ -424,8 +440,9 @@ h1 {
 }
 @media only screen and (min-width: 52.5625em) {
   #wrapper {
-    max-width: 1130px;
+    max-width: 980px;
     margin: 0 auto;
+    padding: 25px;
   }
   #wrapper:before,
   #wrapper:after {
@@ -436,14 +453,14 @@ h1 {
     clear: both;
   }
   #mprnews-content {
-    background-color: #cccccc;
-    width: 70%;
+    width: 61%;
     float: left;
     max-width: 730px;
   }
   #sidebar {
     width: 300px;
-    margin: 0 2% 0 0;
+    padding: 0;
+    margin: 0 0 0 0;
     float: right;
   }
   #sidebar ul,
@@ -452,6 +469,17 @@ h1 {
   }
   #sidebar ul {
     padding-left: 0;
+  }
+  #paginators a {
+    width: 20px;
+  }
+}
+@media only screen and (min-width: 61.3125em) {
+  #wrapper {
+    max-width: 1130px;
+  }
+  #mprnews-content {
+    width: 66%;
   }
 }
 /* ==========================================================================
