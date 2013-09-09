@@ -398,12 +398,28 @@ h1 {
     height: 120px;
     width: 20px;
     top: 45%;
+    transition: width 200ms, height 100ms, background-color 100ms, top 100ms linear;
   }
   #paginators a#prev {
     left: 0;
   }
   #paginators a#next {
     right: 0;
+  }
+  #paginators a:hover {
+    width: 40%;
+    border: 2px solid #cccccc;
+    background-color: #ffffff;
+    z-index: 1000;
+    cursor: pointer;
+    height: 150px;
+    top: 43%;
+  }
+  #paginators a#prev:hover {
+    border-left: none;
+  }
+  #paginators a#next:hover {
+    border-right: none;
   }
 }
 @media only screen and (min-width: 52.5625em) {
