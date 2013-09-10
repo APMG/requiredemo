@@ -21,7 +21,7 @@
     {else}
        
         <link rel="stylesheet" href="/css/main.css" />   
-        <!--[if lt IE 9]>  <link rel="stylesheet" href="/css/ie8_compat.css" />   <![endif]-->
+        <!--[if (lt IE 9)&(!IEMobile)]>  <link rel="stylesheet" href="/css/ie8_compat.css" />   <![endif]-->
 
         <script src="/vendor/modernizr/modernizr.js"></script>
         <script data-main='/js/init' src="/vendor/requirejs/require.js"></script> 
@@ -80,11 +80,7 @@
         </div>
 
 
-        <aside id='mprnews-footer'>
-        </aside>
-
-        <footer id="mpr-footer">
-        </footer>
+        {include 'footer.tpl'}
 
     </body>
 </html>

@@ -19,6 +19,21 @@
     @import "medium";
 }
 
+@media only screen and (min-width: 46.75em ){ //748 px
+	//this needs to get moved out to a seperate stylesheet
+	footer.advertisement{
+		width: 728px;
+    	margin: 20px auto 10px;
+    	// height: 120px;
+    	display: block;
+    	div{
+    		width: 728px;
+    		height: 120px;
+    		background-color: orange;
+    	}
+	}
+}
+
 // desktop/large, starts at 841px and up
 @media only screen and (min-width: 52.5625em ){  //52.5625em
    @import "large";

@@ -1,0 +1,82 @@
+
+footer.advertisement{
+    display: none;
+    
+}
+footer{
+    .label-font();
+    font-weight: bold;
+    font-size: 1.3em;
+    a{
+        text-decoration: none;
+    }
+    div.inner{
+        max-width: 1280px;
+        width: 96%;
+        margin: 0 auto;
+        padding: 10px 0;
+        .clearfix();
+    }
+    div.copyright{
+        .clearfix();
+        margin: 0 2%;
+    }
+    &.news{
+        background-color: lighten(@brand-secondary, 50%);
+        width: 100%;
+        min-height: 20px;
+        margin-top: 10px;
+        h4{
+            .label-font();
+            font-weight: bold;
+            color: @brand-primary;
+            margin: 0px 0 0;
+            a{ 
+                color: @brand-secondary;
+                &:hover{ color: @link-color-hover; }
+            }
+
+        }
+    }
+    &.mprGlobal{
+        background-color: @brand-secondary;
+        width: 100%;
+        a{ 
+            color: #fff; 
+            &:hover{ color: @brand-primary; }
+        }
+    }
+    ul{
+        width: 100%;
+        margin: 0%;
+        padding: 0;
+        float: left;
+        li{
+            list-style-image: none;
+            list-style-type: none;
+            margin: 8px 0 0;
+            // a{
+            //    font-size: 1.3em;
+            // }
+        }
+    }
+    p{  
+        
+        margin-top: 10px;
+        .clearfix();
+        color: #fff;
+        font-weight: normal; 
+        font-size: 0.7em;
+    }
+     a.footerLogo{
+        margin-top: 10px;
+        display: block;
+        width: 25%;
+        float: left;
+        height: 100px;
+        background-position: top left;
+        background-repeat: no-repeat;
+        //.retina-image('../images/mpr_logo.png', '../images/mpr_logo@2x.png', 114px, 100px); 
+        margin-bottom: 10px;
+    }
+}

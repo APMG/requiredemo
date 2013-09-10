@@ -354,6 +354,44 @@ table {
  * Open sourced under MIT license by @mdo.
  * Some variables and mixins from Bootstrap (Apache 2 license).
  */
+/* Normal Buttons ---------------------- */
+.button {
+  width: auto;
+  background: #e4ebed;
+  border: 2px solid #cccccc;
+  /* color: white; */
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0;
+  padding: 10px 20px 11px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: background-color 0.15s ease-in-out;
+  -moz-transition: background-color 0.15s ease-in-out;
+  -o-transition: background-color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out;
+  /* Hovers */
+  /* Sizes */
+  /* Colors */
+  /* Radii */
+  /* Layout */
+  /* Disabled ---------- */
+}
+.button:hover,
+.button:focus {
+  color: white;
+  background-color: #00334e;
+}
+.button:active {
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
+  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
+}
 * {
   transition: margin 0.3s ease-out;
   -webkit-transition: margin 0.3s ease-out;
@@ -391,14 +429,115 @@ h6 {
   border-bottom: 2px solid #cccccc;
   text-align: center;
 }
+footer.advertisement {
+  display: none;
+}
+footer {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+footer a {
+  text-decoration: none;
+}
+footer div.inner {
+  max-width: 1280px;
+  width: 96%;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+footer div.inner:before,
+footer div.inner:after {
+  content: " ";
+  display: table;
+}
+footer div.inner:after {
+  clear: both;
+}
+footer div.copyright {
+  margin: 0 2%;
+}
+footer div.copyright:before,
+footer div.copyright:after {
+  content: " ";
+  display: table;
+}
+footer div.copyright:after {
+  clear: both;
+}
+footer.news {
+  background-color: #eaf4f7;
+  width: 100%;
+  min-height: 20px;
+  margin-top: 10px;
+}
+footer.news h4 {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  color: #00334e;
+  margin: 0px 0 0;
+}
+footer.news h4 a {
+  color: #3d8fa5;
+}
+footer.news h4 a:hover {
+  color: #00659b;
+}
+footer.mprGlobal {
+  background-color: #3d8fa5;
+  width: 100%;
+}
+footer.mprGlobal a {
+  color: #fff;
+}
+footer.mprGlobal a:hover {
+  color: #00334e;
+}
+footer ul {
+  width: 100%;
+  margin: 0%;
+  padding: 0;
+  float: left;
+}
+footer ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin: 8px 0 0;
+}
+footer p {
+  margin-top: 10px;
+  color: #fff;
+  font-weight: normal;
+  font-size: 0.7em;
+}
+footer p:before,
+footer p:after {
+  content: " ";
+  display: table;
+}
+footer p:after {
+  clear: both;
+}
+footer a.footerLogo {
+  margin-top: 10px;
+  display: block;
+  width: 25%;
+  float: left;
+  height: 100px;
+  background-position: top left;
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+}
 #wrapper {
   padding: 10px;
 }
 #mprnews-content {
   font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: rgba(255, 0, 0, 0.2);
 }
 #sidebar {
   padding: 10px;
+  background-color: rgba(0, 255, 0, 0.2);
 }
 @media only screen and (min-width: 33.8125em) {
   body {
@@ -406,6 +545,19 @@ h6 {
   }
   #wrapper {
     padding: 20px;
+  }
+  footer {
+    font-size: 1em;
+  }
+  footer ul {
+    width: 50%;
+  }
+  footer p {
+    margin-left: 25%;
+  }
+  footer a.footerLogo {
+    width: 50%;
+    height: 200px;
   }
   #paginators a {
     position: fixed;
@@ -438,7 +590,27 @@ h6 {
     border-right: none;
   }
 }
+@media only screen and (min-width: 46.75em) {
+  footer.advertisement {
+    width: 728px;
+    margin: 20px auto 10px;
+    display: block;
+  }
+  footer.advertisement div {
+    width: 728px;
+    height: 120px;
+    background-color: orange;
+  }
+}
 @media only screen and (min-width: 52.5625em) {
+  footer ul {
+    width: 25%;
+    padding: 10px 0;
+  }
+  footer a.footerLogo {
+    width: 25%;
+    height: 100px;
+  }
   #wrapper {
     max-width: 980px;
     margin: 0 auto;
