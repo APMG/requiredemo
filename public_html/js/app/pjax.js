@@ -37,15 +37,19 @@ define(["jquery", 'jquery-pjax'], function ($) {
     
     // Only load pjax if html5 pushState (history) is available in this browser 
     if (Modernizr.history){
-
-        pjaxScanLinks('#pjax-container');
+        //pjaxScanLinks('#pjax-container');
         $(document).pjax('[data-pjax] a, a[data-pjax]', '#pjax-container');
-        // We need to check the incoming data for any links to the site itself
-        // For now, this is just the host, but in the future it will need to look at URL patterns
-        $('#pjax-container').on('pjax:end', function(event){
-            pjaxScanLinks(event.target);
 
-            // It mgiht make sense to break these functions out to seperate files and have them watch for pjax:end event
+        // Running pjaxScanLinks on ready and pjax:complete is necessary for event compatability with IE 10
+        // pjax:end and scanning the incoming contents doens't seem to work otherwise
+        $(document).on('ready pjax:complete',function(){
+            pjaxScanLinks('#pjax-container');
+            resetAds();
+            fireAnalytics();
+        });
+    } else {
+        // it may be necssary to move this around later, depending on code or how we want to arrange things
+        $(document).on('ready', function(){
             resetAds();
             fireAnalytics();
         });
