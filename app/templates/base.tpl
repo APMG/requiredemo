@@ -84,9 +84,9 @@
         E.g., $('#checkSmall').is(':visible');
         This depends on the css being set up correctly. 
         *}
-        <div id="checkSmall" />
-        <div id="checkMedium" />
-        <div id="checkLarge" />
-        <div id="checkXlarge" />
+        <div id="checkSmall"></div>
+        <div id="checkMedium"></div>
+        <div id="checkLarge"></div>
+        <div id="checkXlarge"></div>
     </body>
 </html>

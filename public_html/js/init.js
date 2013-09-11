@@ -17,6 +17,7 @@ requirejs.config({
         },
         "shim": {
                 "jquery-pjax": ["jquery"],
+                'scrollMonitor': ["jquery"],
                 'soundmanager2': {
                         exports: 'soundManager'
                 },
