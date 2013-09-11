@@ -565,6 +565,21 @@ footer a.footerLogo {
   padding: 10px;
   background-color: rgba(0, 255, 0, 0.2);
 }
+/* ==========================================================================
+   Helper elements to see what device size we're on. See note in base.tpl.
+   ========================================================================== */
+#checkSmall {
+  display: block;
+}
+#checkMedium {
+  display: none;
+}
+#checkLarge {
+  display: none;
+}
+#checkXlarge {
+  display: none;
+}
 @media only screen and (min-width: 33.8125em) {
   body {
     font-size: 18px;
@@ -617,6 +632,8 @@ footer a.footerLogo {
   #paginators a#prev.clicked,
   #paginators a#prev.notfixed {
     border-left: none;
+    border-top: 2px solid #cccccc;
+    border-bottom: 2px solid #cccccc;
   }
   #paginators a#prev.notfixed {
     left: 0;
@@ -625,6 +642,8 @@ footer a.footerLogo {
   #paginators a#next.clicked,
   #paginators a#next.notfixed {
     border-right: none;
+    border-top: 2px solid #cccccc;
+    border-bottom: 2px solid #cccccc;
   }
   #paginators a#next.notfixed {
     right: 0;
@@ -652,6 +671,21 @@ footer a.footerLogo {
     width: 50%;
     height: 200px;
     background-position: top left;
+  }
+  /* ==========================================================================
+     Helper elements to see what device size we're on. See note in base.tpl.
+     ========================================================================== */
+  #checkSmall {
+    display: none;
+  }
+  #checkMedium {
+    display: block;
+  }
+  #checkLarge {
+    display: none;
+  }
+  #checkXlarge {
+    display: none;
   }
 }
 @media only screen and (min-width: 46.75em) {
@@ -709,6 +743,21 @@ footer a.footerLogo {
   #sidebar ul {
     padding-left: 0;
   }
+  /* ==========================================================================
+     Helper elements to see what device size we're on. See note in base.tpl.
+     ========================================================================== */
+  #checkSmall {
+    display: none;
+  }
+  #checkMedium {
+    display: none;
+  }
+  #checkLarge {
+    display: block;
+  }
+  #checkXlarge {
+    display: none;
+  }
 }
 @media only screen and (min-width: 61.3125em) {
   #wrapper {
@@ -716,6 +765,21 @@ footer a.footerLogo {
   }
   #mprnews-content {
     width: 66%;
+  }
+  /* ==========================================================================
+     Helper elements to see what device size we're on. See note in base.tpl.
+     ========================================================================== */
+  #checkSmall {
+    display: none;
+  }
+  #checkMedium {
+    display: none;
+  }
+  #checkLarge {
+    display: none;
+  }
+  #checkXlarge {
+    display: block;
   }
 }
 /* ==========================================================================

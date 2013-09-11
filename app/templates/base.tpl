@@ -79,5 +79,14 @@
 
         {include 'footer.tpl'}
 
+        {* 
+        Helper elements we can quickly examine from JS to see what device size we're on 
+        E.g., $('#checkSmall').is(':visible');
+        This depends on the css being set up correctly. 
+        *}
+        <div id="checkSmall" />
+        <div id="checkMedium" />
+        <div id="checkLarge" />
+        <div id="checkXlarge" />
     </body>
 </html>
