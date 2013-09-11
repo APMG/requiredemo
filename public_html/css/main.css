@@ -433,9 +433,10 @@ footer.advertisement {
   display: none;
 }
 footer {
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
-  font-size: 1.3em;
+  font-size: 1.14em;
+  line-height: 1.6;
 }
 footer a {
   text-decoration: none;
@@ -472,7 +473,7 @@ footer.news {
   margin-top: 10px;
 }
 footer.news h4 {
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   color: #00334e;
   margin: 0px 0 0;
@@ -508,7 +509,7 @@ footer p {
   margin-top: 10px;
   color: #fff;
   font-weight: normal;
-  font-size: 0.7em;
+  font-size: 0.85em;
 }
 footer p:before,
 footer p:after {
@@ -521,12 +522,19 @@ footer p:after {
 footer a.footerLogo {
   margin-top: 10px;
   display: block;
-  width: 25%;
+  width: 100%;
   float: left;
   height: 100px;
-  background-position: top left;
+  background-position: top center;
   background-repeat: no-repeat;
+  background-image: url("/img/mpr_logo.png");
   margin-bottom: 10px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  footer a.footerLogo {
+    background-image: url("/img/mpr_logo@2x.png");
+    background-size: 114px 100px;
+  }
 }
 #wrapper {
   padding: 10px;
@@ -547,7 +555,7 @@ footer a.footerLogo {
     padding: 20px;
   }
   footer {
-    font-size: 1em;
+    font-size: 0.889em;
   }
   footer ul {
     width: 50%;
@@ -558,6 +566,7 @@ footer a.footerLogo {
   footer a.footerLogo {
     width: 50%;
     height: 200px;
+    background-position: top left;
   }
   #paginators a {
     position: fixed;

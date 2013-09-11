@@ -6,7 +6,8 @@ footer.advertisement{
 footer{
     .label-font();
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 1.14em;  //14 px base * 1.14 = 16px
+    line-height: 1.6;
     a{
         text-decoration: none;
     }
@@ -66,17 +67,17 @@ footer{
         .clearfix();
         color: #fff;
         font-weight: normal; 
-        font-size: 0.7em;
+        font-size: 0.85em;
     }
      a.footerLogo{
         margin-top: 10px;
         display: block;
-        width: 25%;
+        width: 100%;
         float: left;
         height: 100px;
-        background-position: top left;
+        background-position: top center;
         background-repeat: no-repeat;
-        //.retina-image('../images/mpr_logo.png', '../images/mpr_logo@2x.png', 114px, 100px); 
+        .retina-image('/img/mpr_logo.png', '/img/mpr_logo@2x.png', 114px, 100px); 
         margin-bottom: 10px;
     }
 }
