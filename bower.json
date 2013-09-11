@@ -6,7 +6,8 @@
     "jquery": "1.10.2",
     "jquery-pjax": "*",
     "modernizr": "*",
-    "preboot": "*"
+    "preboot": "*",
+    "scrollMonitor": "1.0.5"
   },
   "homepage": "https://github.com/APMG/requiredemo",
   "authors": [
