@@ -73,10 +73,7 @@
 
                 </ul>
             </aside>
-            <nav id='paginators'>
-                <a id='prev'></a>
-                <a id='next'></a>
-            </nav>
+            
         </div>
 
 

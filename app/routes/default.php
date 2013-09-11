@@ -2,11 +2,14 @@
 
 
 $app->get('/page/:id/', function ($id) use ($app) {
+	$randomPageNum = rand(3,100);
 	$data = array( 
 		'isPjax'=> $app->request->isPjax(), // this should be moved into a custom view subclass at some point
 		'test' => 'test',
 		'id' => $id,
-		'nextPageNum' => rand(1,100)
+		'randomPageNum' => $randomPageNum,
+		'nextPageNum' => $randomPageNum + 1,
+		'prevPageNum' => $randomPageNum - 1
 	);	
 
     $app->render('page.tpl', $data);

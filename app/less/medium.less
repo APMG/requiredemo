@@ -5,38 +5,5 @@ body{
 	padding: 20px;
 }
 
+@import 'paginators/medium';
 @import 'footer/medium';
-
-#paginators{
-	a{
-		//most of this is just placeholder for better css layout
-		position: fixed;
-		display: block;
-		background-color: @light-blue;
-		height: 120px;
-		width: 15px;
-		top: 45%;
-
-		transition: width 200ms, height 100ms, background-color 100ms, top 100ms linear; 
-
-		&#prev{
-			left: 0;
-		}
-		&#next{
-			right: 0;
-		}
-		&:hover{
-			width: 40%;
-			border: @border;
-			background-color: @body-background;
-			z-index: 1000;
-			cursor: pointer;
-			height: 150px;
-			top: 43%
-		}
-		&#prev:hover{ border-left: none;}
-		&#next:hover{ border-right: none;}
-
-
-	}
-}

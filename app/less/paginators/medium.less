@@ -1,0 +1,72 @@
+#paginators{
+	height: 150px;
+	a{
+		//most of this is just placeholder for better css layout
+		position: fixed;
+		display: block;
+		background-color: @light-blue;
+		height: 120px;
+		width: 15px;
+		top: 45%;
+
+
+		//-webkit-transition: width 1000ms, height 100ms, background-color 100ms; //, top 10000ms linear
+		transition: width 200ms, height 100ms, background-color 100ms; //, top 10000ms linear
+
+		&#prev{
+			left: 0;
+			border-bottom: none;
+			border-top: none;
+		}
+		&#next{
+			right: 0;
+			border-bottom: none;
+			border-top: none;
+		}
+		&:hover, .clicked, &.notfixed{
+			width: 45%;
+			border: @border;
+			background-color: @body-background;
+			z-index: 1000;
+			cursor: pointer;
+			height: 150px;
+			top: 43%;
+			span{
+				//display: block;
+				width: auto;
+				overflow: auto;
+				padding: 20px;
+				opacity: 1;
+			}
+		}
+		&#prev{
+			&:hover, &.clicked, &.notfixed{ 
+				border-left: none;
+			}
+			&.notfixed{
+				left: 0;
+			}
+		}
+		&#next{
+			&:hover, &.clicked, &.notfixed{ 
+				border-right: none;
+			}
+			&.notfixed{
+				right: 0;
+			}
+		}
+		span{
+			width: 0;
+			overflow:hidden;
+			display: block;
+			opacity: 0;
+			transition: opacity 400ms cubic-bezier(0.6, -0.28, 0.735, 0.045); 
+			//-webkit-transition: display 400ms, width 400ms; 
+
+		}
+		&.notfixed{
+ 			position: absolute;
+		}
+
+	}
+}
