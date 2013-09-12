@@ -35,14 +35,16 @@ define(["jquery", 'jquery-pjax'], function ($) {
     function fireAnalytics(){
         console.log('placeholder for analytics pageload calls');
     }
-    
+       
+    //fire off ads and analytics on initla load, for every browser
+    resetAds();
+    fireAnalytics();
+
     // Only load pjax if html5 pushState (history) is available in this browser 
     if (Modernizr.history){
         // Right now there is some repetition in here, calling scanLinks, etc, several times
         // that can probably be cleaned up
         pjaxScanLinks('#pjax-container');
-        resetAds();
-        fireAnalytics();
 
         $(document).pjax('[data-pjax] a, a[data-pjax]', '#pjax-container');
         
@@ -53,11 +55,5 @@ define(["jquery", 'jquery-pjax'], function ($) {
             resetAds();
             fireAnalytics();
         });
-    } else {
-        // it may be necssary to move this around later, depending on code or how we want to arrange things
-        $(document).on('ready', function(){
-            resetAds();
-            fireAnalytics();
-        });
-    }
+    } 
 });
