@@ -11,7 +11,7 @@ requirejs.config({
             "app": "app",
             "jquery": "../vendor/jquery/jquery",
             "jquery-pjax": "../vendor/jquery-pjax/jquery.pjax",
-            //'scrollMonitor': "../vendor/scrollMonitor/scrollMonitor",
+            'scrollMonitor': "../vendor/scrollMonitor/scrollMonitor",
             'soundmanager2': '//common.publicradio.org/media_player/1.2.2/script/lib/soundmanager2-jsmin',
             'apmplayer': '//common.publicradio.org/media_player/1.2.2/script/apmplayer-all.min'
         },
@@ -30,4 +30,4 @@ requirejs.config({
 // Load the main app modules to start the app
 requirejs(["app/pjax"]);            // handles links
 requirejs(["app/mediaplayer"]);     // handles media player
-//requirejs(["app/paginators"]);     // handles media player
+requirejs(["app/paginators"]);     // handles media player
