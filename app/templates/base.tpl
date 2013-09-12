@@ -63,7 +63,7 @@
                         <div class="adaptSource">
                             <h5>Sponsor</h5>
                             <div class="ad multi" id="mpr-ad-1">
-                                <img src='http://placekitten.com/300/250' />
+                                <!-- <img src='http://placekitten.com/300/250' /> -->
                             </div>
                     </div>
                     </li>

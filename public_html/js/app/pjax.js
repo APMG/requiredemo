@@ -11,6 +11,7 @@ define(["jquery", 'jquery-pjax'], function ($) {
      * @return {undefined}
      */
     function pjaxScanLinks(container){
+        console.log('scanning links for things that should be pjax');
         $(container).find('a').each(function(){
             if (this.host === window.location.host){
                 $(this).attr('data-pjax','true');
@@ -37,12 +38,17 @@ define(["jquery", 'jquery-pjax'], function ($) {
     
     // Only load pjax if html5 pushState (history) is available in this browser 
     if (Modernizr.history){
-        //pjaxScanLinks('#pjax-container');
-        $(document).pjax('[data-pjax] a, a[data-pjax]', '#pjax-container');
+        // Right now there is some repetition in here, calling scanLinks, etc, several times
+        // that can probably be cleaned up
+        pjaxScanLinks('#pjax-container');
+        resetAds();
+        fireAnalytics();
 
-        // Running pjaxScanLinks on ready and pjax:complete is necessary for event compatability with IE 10
+        $(document).pjax('[data-pjax] a, a[data-pjax]', '#pjax-container');
+        
+        // Running pjaxScanLinks on pjax:complete is necessary for event compatability with IE 10
         // pjax:end and scanning the incoming contents doens't seem to work otherwise
-        $(document).on('ready pjax:complete',function(){
+        $(document).on('pjax:complete', function(){
             pjaxScanLinks('#pjax-container');
             resetAds();
             fireAnalytics();
