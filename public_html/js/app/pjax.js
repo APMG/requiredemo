@@ -55,5 +55,5 @@ define(["jquery", 'jquery-pjax'], function ($) {
             resetAds();
             fireAnalytics();
         });
-    } 
+    }
 });
