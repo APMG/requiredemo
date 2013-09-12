@@ -16,7 +16,6 @@
         <!--[if lt IE 9]>  <link rel="stylesheet" href="/css/ie8_compat.min{$site_version}.css" />   <![endif]-->
 
         <script src="/js/modernizr.min.{$site_version}.js"></script>
-        <script src="/js/all.min.{$site_version}.js"></script> 
 
     {else}
        
@@ -24,8 +23,6 @@
         <!--[if (lt IE 9)&(!IEMobile)]>  <link rel="stylesheet" href="/css/ie8_compat.css" />   <![endif]-->
 
         <script src="/vendor/modernizr/modernizr.js"></script>
-        <script data-main='/js/init' src="/vendor/requirejs/require.js"></script> 
-
         <!-- only used with local development -->
         <script src="http://localhost:35729/livereload.js"></script>
     
@@ -88,5 +85,11 @@
         <div id="checkMedium"></div>
         <div id="checkLarge"></div>
         <div id="checkXlarge"></div>
+    {if $environment == 'production'}
+        <script src="/js/all.min.{$site_version}.js"></script> 
+    {else}
+       <script data-main='/js/init' src="/vendor/requirejs/require.js"></script> 
+    {/if}
+
     </body>
 </html>
