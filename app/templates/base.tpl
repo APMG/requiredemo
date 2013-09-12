@@ -13,7 +13,7 @@
 
     {if $environment == 'production'}
         <link rel="stylesheet" href="/css/main.min.{$site_version}.css" />   
-        <!--[if lt IE 9]>  <link rel="stylesheet" href="/css/ie8_compat.min{$site_version}.css" />   <![endif]-->
+        <!--[if lt IE 9]>  <link rel="stylesheet" href="/css/ie8_compat.min.{$site_version}.css" />   <![endif]-->
 
         <script src="/js/modernizr.min.{$site_version}.js"></script>
 
