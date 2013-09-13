@@ -8,10 +8,10 @@
 		height: 120px;
 		width: 15px;
 		top: 45%;
-
+		overflow:hidden;
 
 		//-webkit-transition: width 1000ms, height 100ms, background-color 100ms; //, top 10000ms linear
-		transition: width 200ms, height 100ms, background-color 100ms; //, top 10000ms linear
+		transition: width 200ms, height 200ms, background-color 200ms; //, top 10000ms linear
 
 		&#prev{
 			left: 0;
@@ -37,6 +37,7 @@
 				overflow: auto;
 				padding: 20px;
 				opacity: 1;
+				transition:  opacity 400ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
 			}
 		}
 		&#prev{
@@ -61,11 +62,12 @@
 		}
 		span{
 			width: 0;
-			overflow:hidden;
+			//overflow:hidden;
 			display: block;
 			opacity: 0;
-			transition: opacity 400ms cubic-bezier(0.6, -0.28, 0.735, 0.045);   //cubic-bezier(0.86, 0, 0.07, 1);
+			transition:  opacity 1ms; //cubic-bezier(0.86, 0, 0.07, 1);
 			//-webkit-transition: display 400ms, width 400ms; 
+			//transition: width 200ms;
 
 		}
 		&.notfixed{

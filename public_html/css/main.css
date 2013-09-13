@@ -597,7 +597,8 @@ footer a.footerLogo {
     height: 120px;
     width: 15px;
     top: 45%;
-    transition: width 200ms, height 100ms, background-color 100ms;
+    overflow: hidden;
+    transition: width 200ms, height 200ms, background-color 200ms;
   }
   #paginators a#prev {
     left: 0;
@@ -627,6 +628,7 @@ footer a.footerLogo {
     overflow: auto;
     padding: 20px;
     opacity: 1;
+    transition: opacity 300ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
   }
   #paginators a#prev:hover,
   #paginators a#prev.clicked,
@@ -650,10 +652,9 @@ footer a.footerLogo {
   }
   #paginators a span {
     width: 0;
-    overflow: hidden;
     display: block;
     opacity: 0;
-    transition: opacity 400ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    transition: opacity 1ms;
   }
   #paginators a.notfixed {
     position: absolute;
