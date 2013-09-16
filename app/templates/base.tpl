@@ -63,8 +63,19 @@
                         <div class="adaptSource">
                             <h5>Sponsor</h5>
                             <div class="ad multi" id="mpr-ad-1">
-                                <!-- <img src='http://placekitten.com/300/250' /> -->
+                                <img src='http://placekitten.com/300/250' />
                             </div>
+                    </div>
+                    </li>
+
+                    <li class="advertisement adaptTarget adaptWide" 
+                        data-adapt="mpr-ad-2" id="mpr-ad-wrapper-2">
+                        <div class="adaptSource">
+                            <h5>Sponsor</h5>
+                            <div class="ad" id="mpr-ad-2">
+                                <img src='http://placekitten.com/300/250' />
+                            </div>
+                            <div class="ad" id="mpr-ad-oop"></div>
                     </div>
                     </li>
 
