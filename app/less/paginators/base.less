@@ -8,20 +8,31 @@
 		span{
 			display: block;
 			padding: 10px;
+			font-size: 1.4em;
+		}
+		b, time{
+			color: @context-text;
+			display: block;
+			font-weight: bold;
+			.label-font();
+			font-size: .7em;
+		}
+		&:before{
+			font-family: 'mpr-feature';
+			speak: none;
+			font-style: normal;
+			font-weight: normal;
+			font-variant: normal;
+			text-transform: none;
+			line-height: 1;
+			-webkit-font-smoothing: antialiased;
+			top: 41%;
+			position: absolute;
 		}
 		&#prev{
 			border-top: @border;
 			&:before{
 				content: "\e001";
-				font-family: 'mpr-feature';
-				speak: none;
-				font-style: normal;
-				font-weight: normal;
-				font-variant: normal;
-				text-transform: none;
-				line-height: 1;
-				-webkit-font-smoothing: antialiased;
-				position: absolute;
 				top: 41%;
 				left: 3px;
 			}
@@ -29,6 +40,10 @@
 		&#next{
 			border-bottom: @border;
 			border-top: @border;
+			&:before{
+				content: "\e003";
+				right: 3px;
+			}
 		}
 	}
 }

@@ -35,9 +35,21 @@
 			<li><a href='#'>Fake related thing 4</a></li>
 		</ul>
 
+		{* 
+		The length of text in the links below needs to be truncated in smarty
+		*}
         <nav id='paginators'>
-            <a id='prev' href="/page/{$prevPageNum}/"><span> Page {$prevPageNum}: This is a longer title that might wrap</span></a>
-            <a id='next' href="/page/{$nextPageNum}/"><span> Page {$nextPageNum}: This is also a longer title that might wrap</span></a>
+            <a id='prev' href="/page/{$prevPageNum}/"><span>
+	            <b>Previous</b>
+	            Page {$prevPageNum}: This is a longer title that might wrap or it could be a different length
+	            <time datetime="2009-11-13T20:00Z">An hour ago</time>
+        	</span></a>
+            <a id='next' href="/page/{$nextPageNum}/"><span> 
+            	<b>Next</b>
+            	Page {$nextPageNum}: This is a short title
+   	            <time datetime="2009-11-13T20:00Z">5 min ago</time>
+
+           </span></a>
         </nav>
 
 

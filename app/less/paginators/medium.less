@@ -29,15 +29,16 @@
 			background-color: @body-background;
 			z-index: 1000;
 			cursor: pointer;
-			height: 150px;
-			top: 43%;
+			height: 135px; //auto;
+			//height: auto;
+			top: 44%;
 			span{
 				//display: block;
 				width: auto;
 				overflow: auto;
-				padding: 20px;
 				opacity: 1;
 				transition:  opacity 400ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
+
 			}
 		}
 		&#prev{
@@ -49,6 +50,10 @@
 			&.notfixed{
 				left: 0;
 			}
+			span{
+				padding-left: 40px;
+			}
+
 		}
 		&#next{
 			&:hover, &.clicked, &.notfixed{ 
@@ -59,20 +64,28 @@
 			&.notfixed{
 				right: 0;
 			}
+			span{
+				padding-right: 40px;
+			}
+		}
+		&.notfixed{
+ 			position: absolute;
 		}
 		span{
 			width: 0;
+			font-size: 1.2222em;
+			padding: 20px;
 			//overflow:hidden;
 			//display: block;
 			opacity: 0;
 			transition:  opacity 1ms; //cubic-bezier(0.86, 0, 0.07, 1);
 			//-webkit-transition: display 400ms, width 400ms; 
 			//transition: width 200ms;
+		}
+		b, time{
+			font-size: .6363em;
+		}
 
-		}
-		&.notfixed{
- 			position: absolute;
-		}
 
 	}
 }
