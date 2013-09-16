@@ -702,51 +702,6 @@ footer a.footerLogo {
     border-bottom: none;
     border-top: none;
   }
-  #paginators a:hover,
-  #paginators a .clicked,
-  #paginators a.notfixed {
-    width: 49%;
-    border: 2px solid #cccccc;
-    background-color: #ffffff;
-    z-index: 1000;
-    cursor: pointer;
-    height: 135px;
-    top: 44%;
-  }
-  #paginators a:hover span,
-  #paginators a .clicked span,
-  #paginators a.notfixed span {
-    width: auto;
-    overflow: auto;
-    opacity: 1;
-    transition: opacity 400ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
-  }
-  #paginators a#prev:hover,
-  #paginators a#prev.clicked,
-  #paginators a#prev.notfixed {
-    border-left: none;
-    border-top: 2px solid #cccccc;
-    border-bottom: 2px solid #cccccc;
-  }
-  #paginators a#prev.notfixed {
-    left: 0;
-  }
-  #paginators a#prev span {
-    padding-left: 25px;
-  }
-  #paginators a#next:hover,
-  #paginators a#next.clicked,
-  #paginators a#next.notfixed {
-    border-right: none;
-    border-top: 2px solid #cccccc;
-    border-bottom: 2px solid #cccccc;
-  }
-  #paginators a#next.notfixed {
-    right: 0;
-  }
-  #paginators a#next span {
-    padding-right: 25px;
-  }
   #paginators a.notfixed {
     position: absolute;
   }
@@ -760,6 +715,87 @@ footer a.footerLogo {
   #paginators a b,
   #paginators a time {
     font-size: .7em;
+  }
+  #paginators a.clicked,
+  #paginators a.notfixed {
+    width: 49%;
+    border: 2px solid #cccccc;
+    background-color: #ffffff;
+    z-index: 1000;
+    cursor: pointer;
+    height: 135px;
+    top: 44%;
+  }
+  #paginators a.clicked span,
+  #paginators a.notfixed span {
+    width: auto;
+    overflow: auto;
+    opacity: 1;
+    transition: opacity 400ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  }
+  #paginators a#prev.clicked,
+  #paginators a#prev.notfixed {
+    border-left: none;
+    border-top: 2px solid #cccccc;
+    border-bottom: 2px solid #cccccc;
+  }
+  #paginators a#prev.notfixed {
+    left: 0;
+  }
+  #paginators a#prev span {
+    padding-left: 25px;
+  }
+  #paginators a#next.clicked,
+  #paginators a#next.notfixed {
+    border-right: none;
+    border-top: 2px solid #cccccc;
+    border-bottom: 2px solid #cccccc;
+  }
+  #paginators a#next.notfixed {
+    right: 0;
+  }
+  #paginators a#next span {
+    padding-right: 25px;
+  }
+  .no-touch #paginators {
+    height: 150px;
+  }
+  .no-touch #paginators a:hover {
+    width: 49%;
+    border: 2px solid #cccccc;
+    background-color: #ffffff;
+    z-index: 1000;
+    cursor: pointer;
+    height: 135px;
+    top: 44%;
+  }
+  .no-touch #paginators a:hover span {
+    width: auto;
+    overflow: auto;
+    opacity: 1;
+    transition: opacity 400ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  }
+  .no-touch #paginators a#prev:hover {
+    border-left: none;
+    border-top: 2px solid #cccccc;
+    border-bottom: 2px solid #cccccc;
+  }
+  .no-touch #paginators a#prev.notfixed {
+    left: 0;
+  }
+  .no-touch #paginators a#prev span {
+    padding-left: 25px;
+  }
+  .no-touch #paginators a#next:hover {
+    border-right: none;
+    border-top: 2px solid #cccccc;
+    border-bottom: 2px solid #cccccc;
+  }
+  .no-touch #paginators a#next.notfixed {
+    right: 0;
+  }
+  .no-touch #paginators a#next span {
+    padding-right: 25px;
   }
   footer {
     font-size: 0.889em;
@@ -804,19 +840,18 @@ footer a.footerLogo {
   }
 }
 @media only screen and (min-width: 52.5625em) {
-  #paginators a {
+  .no-touch #paginators a {
     width: 20px;
   }
-  #paginators a:hover,
-  #paginators a .clicked,
-  #paginators a.notfixed {
+  .no-touch #paginators a .clicked,
+  .no-touch #paginators a.notfixed {
     width: 45%;
   }
-  #paginators a span {
+  .no-touch #paginators a span {
     font-size: 1.2222em;
   }
-  #paginators a b,
-  #paginators a time {
+  .no-touch #paginators a b,
+  .no-touch #paginators a time {
     font-size: .6363em;
   }
   footer ul {

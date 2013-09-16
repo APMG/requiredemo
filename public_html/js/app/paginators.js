@@ -28,6 +28,32 @@ define(['jquery','scrollMonitor' ], function ($, scrollMonitor) {
         }
     }
 
+    function bindTouchEvents(){
+
+        $('#paginators').on('touchstart', 'a', function(e){
+            console.log('event:', e.type);
+            console.log('touchstart');
+
+            if ($(this).hasClass('clicked')){
+                //$(this).click();
+                console.log('fire pjax here');
+                $(this).click();
+            }
+
+            if (e.type === 'touchstart'){
+                $(this).addClass('clicked');
+            }
+            
+            e.preventDefault();
+        });
+
+
+        $('#paginators').on('click','a', function(e){
+            e.preventDefault();
+            //return false;
+        });
+    }
+
     var $element = $('#paginators');
 
     // If there are no paginators, we add an event to pjax:complete to try adding watchPaginators later
@@ -39,5 +65,20 @@ define(['jquery','scrollMonitor' ], function ($, scrollMonitor) {
     } else {
         watchPaginators();
     }
+
+    $(document).on('pjax:complete', function(){
+        bindTouchEvents();
+    });
+
+    // here we bind events for touch devices
+    if (Modernizr.touch){
+
+        bindTouchEvents();
+
+        $(window).on('scroll', function(){
+            $('#paginators a').removeClass('clicked');
+        });
+    }
+
 
 });
