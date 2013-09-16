@@ -486,11 +486,14 @@ h6 {
   background-color: #ffffff;
   display: block;
   text-decoration: none;
+  position: relative;
 }
 #paginators a span {
   display: block;
   padding: 10px;
   font-size: 1.4em;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 #paginators a b,
 #paginators a time {
@@ -643,8 +646,16 @@ footer a.footerLogo {
   background-color: rgba(255, 0, 0, 0.2);
 }
 #sidebar {
-  padding: 10px;
   background-color: rgba(0, 255, 0, 0.2);
+  padding: 0;
+  margin: 0 0 0 0;
+}
+#sidebar ul,
+#sidebar li {
+  list-style-type: none;
+}
+#sidebar ul {
+  padding-left: 0;
 }
 /* ==========================================================================
    Helper elements to see what device size we're on. See note in base.tpl.
@@ -694,7 +705,7 @@ footer a.footerLogo {
   #paginators a:hover,
   #paginators a .clicked,
   #paginators a.notfixed {
-    width: 45%;
+    width: 49%;
     border: 2px solid #cccccc;
     background-color: #ffffff;
     z-index: 1000;
@@ -721,7 +732,7 @@ footer a.footerLogo {
     left: 0;
   }
   #paginators a#prev span {
-    padding-left: 40px;
+    padding-left: 25px;
   }
   #paginators a#next:hover,
   #paginators a#next.clicked,
@@ -734,21 +745,21 @@ footer a.footerLogo {
     right: 0;
   }
   #paginators a#next span {
-    padding-right: 40px;
+    padding-right: 25px;
   }
   #paginators a.notfixed {
     position: absolute;
   }
   #paginators a span {
     width: 0;
-    font-size: 1.2222em;
+    font-size: 1.05em;
     padding: 20px;
     opacity: 0;
     transition: opacity 1ms;
   }
   #paginators a b,
   #paginators a time {
-    font-size: .6363em;
+    font-size: .7em;
   }
   footer {
     font-size: 0.889em;
@@ -796,6 +807,18 @@ footer a.footerLogo {
   #paginators a {
     width: 20px;
   }
+  #paginators a:hover,
+  #paginators a .clicked,
+  #paginators a.notfixed {
+    width: 45%;
+  }
+  #paginators a span {
+    font-size: 1.2222em;
+  }
+  #paginators a b,
+  #paginators a time {
+    font-size: .6363em;
+  }
   footer ul {
     width: 25%;
     padding: 10px 0;
@@ -825,15 +848,7 @@ footer a.footerLogo {
   #sidebar {
     width: 300px;
     padding: 0;
-    margin: 0 0 0 0;
     float: right;
-  }
-  #sidebar ul,
-  #sidebar li {
-    list-style-type: none;
-  }
-  #sidebar ul {
-    padding-left: 0;
   }
   /* ==========================================================================
      Helper elements to see what device size we're on. See note in base.tpl.
