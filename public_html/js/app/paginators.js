@@ -4,18 +4,6 @@ define(['jquery','scrollMonitor' ], function ($, scrollMonitor) {
      * Use half the viewport height as the offset -- this seems to be right about when the 
      * paginators line up with the box on the page that should contain them 
      */
-    //$(document).ready(function(){
-    var $element = $('#paginators');
-
-    // If there are no paginators, we add an event to pjax:complete to try adding watchPaginators later
-    // This way if we come to a page w/o paginators, they will work correctly after pjax
-    if ($element.length === 0){
-        $(document).on('pjax:complete', function(){
-            watchPaginators();
-        });
-    } else {
-        watchPaginators();
-    }
 
     function watchPaginators(){
         var $element = $('#paginators');
@@ -39,4 +27,17 @@ define(['jquery','scrollMonitor' ], function ($, scrollMonitor) {
             });
         }
     }
+
+    var $element = $('#paginators');
+
+    // If there are no paginators, we add an event to pjax:complete to try adding watchPaginators later
+    // This way if we come to a page w/o paginators, they will work correctly after pjax
+    if ($element.length === 0){
+        $(document).on('pjax:complete', function(){
+            watchPaginators();
+        });
+    } else {
+        watchPaginators();
+    }
+
 });
