@@ -7,7 +7,7 @@ node_modules
 /public_html/vendor/**
 /public_html/js/*.min*
 /public_html/css/*.css
-
+public_html/css/*.css
 
 # Composer #
 ############
