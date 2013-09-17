@@ -1,17 +1,49 @@
-.no-touch{
-	#paginators{
-		a{ 
-			width: 20px; 
-			 .clicked, &.notfixed{ //&:hover,
-				width: 45%;
+#paginators a{
+	width: 20px; 
+	span{
+		padding-top: 20px;
+	}
+	&#prev span{
+		padding-left: 45px;
+	}
+	&#next span{
+		padding-right: 45px;
+	}
+	&#prev:before{
+		left: 3px;
+	}
+	&#next:before{
+		right: 3px;
+	}
+	// &:before{
+	// 	font-size: 30px;
+	// }
+	//
+	&.notfixed{
+		width: 45%;
+	}
+	&.clicked:before{
+		font-size: 30px;
+		top: 39%;
+	}
+}
+
+.no-touch #paginators{
+	a{ 
+		
+		 &:hover{ 
+			width: 45%;
+			&:before{
+				font-size: 30px;
+				top: 39%;
 			}
-			span{
-				font-size: 1.2222em;
-				//height: 120px;
-			}
-			b, time{
-				font-size: .6363em;
-			}
+		}
+		span{
+			font-size: 1.2222em;
+			//height: 120px;
+		}
+		b, time{
+			font-size: .6363em;
 		}
 	}
 }
