@@ -32,15 +32,17 @@
     <body>
 
         <nav id="mprnews-nav">
-            <a href="/" data-pjax>Home</a>  
-            <a href="/page/1/" data-pjax>Page 1</a> 
-            <a href="/page/2/" data-pjax>Page 2</a>  
-            <a href="/page/33/" data-pjax>Page 33</a>  
+            {include 'nav.tpl'}
            
         </nav>
 
 
         <div id="wrapper">
+
+            <a href="/" data-pjax>Home</a>  
+            <a href="/page/1/" data-pjax>Page 1</a> 
+            <a href="/page/2/" data-pjax>Page 2</a>  
+            <a href="/page/33/" data-pjax>Page 33</a>
             <section id='mprnews-content'>
 
                 <article id='pjax-container'>

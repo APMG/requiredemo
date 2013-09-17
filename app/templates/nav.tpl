@@ -1,5 +1,10 @@
 
 <ul>
+
+	<li>
+		<a href="/"><img src="/img/mprnews.svg" alt=""/></a>
+	</li>
+
 	<li>
 		<ul>
 			<li class="mpr">
