@@ -1,8 +1,14 @@
+<a href="#" id='nav-top-opener'></a>
 
-<ul>
+<div id='news-logo'>
+	<a href="/"><img src="/img/mprnews.svg" alt=""/></a>
+</div>
 
+
+
+<ul id='nav-top'>
 	<li>
-		<a href="/"><img src="/img/mprnews.svg" alt=""/></a>
+		<a href="https://contribute.publicradio.org/contribute.php#web_nav_button" class="contribution-link">Give Now</a>
 	</li>
 
 	<li>
@@ -129,28 +135,26 @@
 	</li>
 
 
-
-	<li>
-		<a href="https://contribute.publicradio.org/contribute.php#web_nav_button" class="giveNowHeaderLink">Give Now</a>
-	</li>
-
-
-	<li class='weather'>
-
-	</li>
-
-	<li>
-		<form id="searchForm" name="search" method="get" action="http://find.publicradio.org/search">		
-				<input type="search" placeholder="Search MPR" value="" name="q" class="searchbox empty" />
-				<input type="hidden" value="mpr" name="site" />
-				<input type="hidden" value="mpr" name="proxystylesheet" />
-				<input type="hidden" value="mpr" name="client" />
-				<input type="hidden" value="xml_no_dtd" name="output" />
-				<input type="hidden" value="p" name="filter" />
-				<input type="hidden" value="5" name="numgm" />
-		</form>
-
-	</li>
-
 </ul>
 
+	<div>
+		<a href="https://contribute.publicradio.org/contribute.php#web_nav_button" class="contribution-link">Give Now</a>
+	</div>
+
+
+	<div id='nav-weather'>
+
+	</div>
+
+<div id='nav-search'>
+	<form id="searchForm" name="search" method="get" action="http://find.publicradio.org/search">		
+			<input type="search" placeholder="Search MPR" value="" name="q" class="searchbox empty" />
+			<input type="hidden" value="mpr" name="site" />
+			<input type="hidden" value="mpr" name="proxystylesheet" />
+			<input type="hidden" value="mpr" name="client" />
+			<input type="hidden" value="xml_no_dtd" name="output" />
+			<input type="hidden" value="p" name="filter" />
+			<input type="hidden" value="5" name="numgm" />
+	</form>
+
+</div>
