@@ -133,13 +133,11 @@
 		</ul>
 
 	</li>
-
-
 </ul>
 
-	<div>
-		<a href="https://contribute.publicradio.org/contribute.php#web_nav_button" class="contribution-link">Give Now</a>
-	</div>
+<div>
+	<a href="https://contribute.publicradio.org/contribute.php#web_nav_button" class="contribution-link">Give Now</a>
+</div>
 
 
 	<div id='nav-weather'>

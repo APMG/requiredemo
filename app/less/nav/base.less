@@ -28,8 +28,22 @@
 }
 
 #nav-search{
+
+	&:before{
+		content: "\e000";
+		font-family: 'mpr-feature';
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+		-webkit-font-smoothing: antialiased;
+	}
 	width: 40px;
 	float: right;
+	input{ display: none; }
+
 }
 #nav-top-opener{
 	display: block;
@@ -38,3 +52,10 @@
 	height: 40px;
 	background: url(/img/hamburger.svg) no-repeat;
 }
+#nav-top{
+	height: 0;
+	overflow: hidden;
+}
+
+// hide contribution link in mobile
+div .contribution-link{ display: none;}
