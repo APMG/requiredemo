@@ -8,9 +8,7 @@ define(['jquery','scrollMonitor' ], function ($, scrollMonitor) {
     function watchPaginators(){
         var $element = $('#paginators');
         if ($element.length > 0){
-            console.log($element, scrollMonitor.viewportHeight/2);
             var watcher = scrollMonitor.create( $element, scrollMonitor.viewportHeight/2);
-            console.log(watcher);
 
             // TODO: This is currently broken in IE 10
             // Fix it.
@@ -20,31 +18,35 @@ define(['jquery','scrollMonitor' ], function ($, scrollMonitor) {
                 $element = $('#paginators');
                 // The contents of this function should only fire on medium and larger screens 
                 if ( $("#checkSmall").is(':hidden')  ){
-                    console.log('stateChange!');
-                    console.log(this);
                     $element.find('a').addClass('notfixed').css('top',$element.position().top);
                 }
             });
         }
     }
 
+    /* 
+     * Helper to add touch events
+     * broken out into seperate function because we need to re-attach events after pjax
+     */
     function bindTouchEvents(){
 
         $('#paginators').on('touchstart', 'a', function(e){
-            console.log('event:', e.type);
-            console.log('touchstart');
 
             if ($(this).hasClass('clicked')){
-                //$(this).click();
-                console.log('fire pjax here');
                 $(this).click();
             }
 
             if (e.type === 'touchstart'){
                 $(this).addClass('clicked');
+
+                //close them after a while
+                window.setTimeout(function(){
+                    $('#paginators a').removeClass('clicked');
+                }, 8000);
             }
             
-            e.preventDefault();
+            e.preventDefault();  //make sure the event doesnt bubble up to the document, where we're watching for clicks to close
+            e.stopPropagation();
         });
 
 
@@ -66,18 +68,20 @@ define(['jquery','scrollMonitor' ], function ($, scrollMonitor) {
         watchPaginators();
     }
 
-    $(document).on('pjax:complete', function(){
-        bindTouchEvents();
-    });
-
-    // here we bind events for touch devices
+    // here we bind events for touch devices, ignored for others
     if (Modernizr.touch){
 
-        bindTouchEvents();
+        bindTouchEvents(); //attach touch events on load
+        
+        $(document).on('pjax:complete', function(){
+            bindTouchEvents(); //re-attach touch events after pjax done
+        });
 
-        $(window).on('scroll', function(){
+        //hide the paginators when any other part of the document is clicked
+        $(document).on('touchstart', function() {
             $('#paginators a').removeClass('clicked');
         });
+
     }
 
 
