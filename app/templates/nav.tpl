@@ -144,15 +144,20 @@
 
 	</div>
 
-<div id='nav-search'>
-	<form id="searchForm" name="search" method="get" action="http://find.publicradio.org/search">		
-			<input type="search" placeholder="Search MPR" value="" name="q" class="searchbox empty" />
-			<input type="hidden" value="mpr" name="site" />
-			<input type="hidden" value="mpr" name="proxystylesheet" />
-			<input type="hidden" value="mpr" name="client" />
-			<input type="hidden" value="xml_no_dtd" name="output" />
-			<input type="hidden" value="p" name="filter" />
-			<input type="hidden" value="5" name="numgm" />
-	</form>
+<div id='nav-search' >  
+	<!-- class='search-open' -->
 
+	<form id="searchForm" name="search" method="get" action="http://find.publicradio.org/search">		
+		{* standard GSA fields *}
+		<input type="search" placeholder="Phrase, topic, politician..." value="" name="q" class="searchbox" />
+		<input type="hidden" value="mpr" name="site" />
+		<input type="hidden" value="mpr" name="proxystylesheet" />
+		<input type="hidden" value="mpr" name="client" />
+		<input type="hidden" value="xml_no_dtd" name="output" />
+		<input type="hidden" value="p" name="filter" />
+		<input type="hidden" value="5" name="numgm" />
+		{* /GSA fields *}
+		<input type='submit' class='search-submit' value=''/>
+		<span class="search-icon"></span>
+	</form>
 </div>

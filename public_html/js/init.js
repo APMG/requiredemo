@@ -30,4 +30,5 @@ requirejs.config({
 // Load the main app modules to start the app
 requirejs(["app/pjax"]);            // handles links
 requirejs(["app/mediaplayer"]);     // handles media player
-requirejs(["app/paginators"]);     // handles media player
+requirejs(["app/paginators"]);      // handles prev/next pagination
+requirejs(["app/nav"]);             // for navigational bar
