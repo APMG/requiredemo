@@ -149,15 +149,25 @@ div .contribution-link{ display: none;}
 	// }
 	
 	&.search-open,
-	&:hover{  //eventually should be html.no-js hover to work on clients w/o js, but it works for dev for now
+	&:hover,
+	&:focus,{
 		width: 90%;
 		.search-icon{
 			background-color: @light-blue;
+		}
+	}
+
+}
+/*  We only want to change the z-index on non-touch devices
+	This makes sure that on touch devices without js, it works on a the :hover/:focus psuedo selectors
+*/
+.no-touch #nav-search{
+	&.search-open{  
+		.search-icon{
 			z-index: 11;
 		}
 		.search-submit{
 			z-index: 90;
 		}
 	}
-
 }
