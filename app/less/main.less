@@ -7,6 +7,9 @@
 // Bring in normalize css from vendor package
 @import "../../public_html/vendor/preboot/less/normalize"; 
 
+// make sure we're using border-box everywhere, which normalize doesn't seem to include
+*, *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
 // Import icon font (made via icomoon: http://icomoon.io/app/)
 @import (less) "icon-font.css";
 
