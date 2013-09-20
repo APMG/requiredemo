@@ -3,6 +3,16 @@
 	margin: 0 auto;
 	padding-top: 8px;
 }
+.lt-ie9 #news-logo{ //compat for ie8
+	img{ display: none;}
+	a{
+		display: block;
+		width: 171px;
+		height: 24px;
+		margin: 0 auto;
+		background: transparent url('/img/mprnews.png') no-repeat center center;
+	}
+}
 
 #mprnews-nav{
 	width: 100%;
@@ -155,7 +165,7 @@
 	.transition(~"margin 0");
 }
 .lt-ie9 #nav-top-opener{
-	background-image: url('/img/hambuger.png');
+	background-image: url('/img/hamburger.png');
 }
 
 // hide contribution link in mobile
