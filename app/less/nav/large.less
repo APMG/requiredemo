@@ -1,0 +1,39 @@
+#mprnews-nav{
+	position: relative;
+	margin: 0 auto;
+	max-width: 1130px;
+	border-bottom: none;
+}
+// #wrapper{
+// 	background-color: purple;
+// }
+
+#news-logo{
+	position: absolute;
+	left: 10px;
+	margin: 0;
+}
+
+
+#nav-top-contribution{
+
+}
+
+
+#nav-top{
+	position: static;
+	&:hover, &.nav-open{
+		#nav-top-opener{
+			display: none;
+		}
+	}
+}
+#nav-top-opener{
+	display: none !important;
+}
+
+#nav-faux-wrapper{
+	display: block;
+	width: 100%;
+	border-top: @border;
+}

@@ -30,11 +30,7 @@
     </head>
     <body>
 
-        <nav id="mprnews-nav">
-            {include 'nav.tpl'}
-           
-        </nav>
-
+        {include 'nav.tpl'}
 
         <div id="wrapper">
             <section id='mprnews-content'>

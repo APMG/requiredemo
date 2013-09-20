@@ -2,6 +2,7 @@
 	width: 200px;
 	margin: 0 auto;
 	padding-top: 8px;
+	.transition(~"margin 0");
 }
 .lt-ie9 #news-logo{ //compat for ie8
 	img{ display: none;}
@@ -172,6 +173,9 @@
 #nav-top-contribution{ display: none;}
 
 
+#nav-weather{
+	display: none;
+}
 
 /* 
  * Very helpful:
@@ -333,4 +337,9 @@
 			z-index: 90;
 		}
 	}
+}
+
+//empty div that is used on large screen to simulate full width, we put a border on it
+#nav-faux-wrapper{
+	display: none;
 }

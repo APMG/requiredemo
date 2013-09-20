@@ -1,0 +1,66 @@
+#mprnews-nav{
+	height: 52px;
+	//background-color: pink;
+	.contribution-link{
+		font-size: 0.778em; //14px
+		padding: 2px 6px;
+	}
+}
+
+#news-logo{
+	margin: 0px 0 0 60px;
+	padding-top: 14px;
+}
+
+#nav-weather{
+	display: block;
+	width: 110px;
+	height: 50px;
+	background-color: orange;
+	position: absolute;
+	right: 60px;
+	top: 0px;
+}
+
+#nav-top-contribution{
+	display: block;
+	position: absolute;
+	top: 12px;
+	right: 180px;
+}
+#nav-top{
+	&:hover, &.nav-open{
+		#nav-top-opener{
+			background-position: 11px 13px;
+
+		}
+	}
+
+}
+
+#nav-top-opener{
+	width: 62px;
+	height: 42px;
+	background-position: 13px 11px;
+}
+
+#nav-search{
+	height: 40px;
+	.searchbox{
+		height: 50px;
+	}
+	.search-icon{
+		margin-top: -2px;
+	}
+	.search-icon,
+	.search-submit{
+		height: 52px;
+	}
+	&.search-open,
+	&:hover,
+	&:focus,{
+		.searchbox{
+			margin-left: 60px;
+		}
+	}
+}
