@@ -1,4 +1,4 @@
-<div id='nav-top'> <!-- class='nav-open' -->
+<div id='nav-top' class='nav-open'> <!-- class='nav-open' -->
 	
 	<a href='#' id='nav-top-opener'></a>
 
@@ -14,9 +14,9 @@
 						<a title="Minnesota Public Radio" href="http://minnesota.publicradio.org/">Minnesota Public Radio</a>
 					</li>
 
-					<li>MPR Services</li>
+					<li class="header">MPR Services</li>
 
-					<li class="classical">
+					<li class="news">
 						<a title="Minnesota Public Radio News" href="http://minnesota.publicradio.org/features/">
 							<span>MPR News</span>
 						</a>
@@ -42,27 +42,27 @@
 					</li>
 
 
-					<li class="">
+					<li class='nav-secondary'>
 						<a href="http://www.thecurrent.org/heartland">Radio Heartland</a>     
 					</li>
 
-					<li class="">
+					<li class='nav-secondary'>
 						<a href="http://www.thecurrent.org/local">Local Current </a> 
 					</li>
 
-					<li class="">
+					<li class='nav-secondary'>
 						<a href="http://www.thecurrent.org/wonderground">Wonderground Radio  </a>   
 					</li>
 
-					<li>
+					<li class='nav-secondary'>
 						<a href="http://minnesota.publicradio.org/radio/services/cms/choral/">Choral Classial</a>
 					</li>
 				</ul>
 			</li>
 
 
-			<li>
-				<a href="#">Sections</a>
+			<li id="nav-news-sections">
+				<a href="#" class="header" id="news-sections-header">Sections</a>
 				<ul>
 					<li><a href="#">Latest news</a></li>
 					<li><a href="#">Most shared</a></li>
@@ -79,11 +79,11 @@
 
 					<li><a href="#">MPR News Blogs</a></li>
 
-					<li><a href="#">Special coverage</a></li>
+					<li class='header'><a href="#">Special coverage</a></li>
 					<li><a href="#">Mental Health Series</a></li>
 					<li><a href="#">Other thing</a></li>
 
-					<li><a href="#">MPR News programs</a></li>
+					<li class='header'><a href="#">MPR News programs</a></li>
 					<li><a href="#">Morning Edition</a></li>
 					<li><a href="#">The Daily Circuit</a></li>
 					<li><a href="#">All Things Considered</a></li>
@@ -142,7 +142,7 @@
 
 
 
-<div>
+<div id="nav-top-contribution">
 	<a href="https://contribute.publicradio.org/contribute.php#web_nav_button" class="contribution-link">Give Now</a>
 </div>
 
@@ -151,10 +151,10 @@
 
 	</div>
 
-<div id='nav-search'>  
+<div id='nav-search' >  
 	<!-- class='search-open' -->
-
-	<form id="searchForm" name="search" method="get" action="http://find.publicradio.org/search">		
+	<form id="searchForm" name="search" method="get" action="http://find.publicradio.org/search">
+		<label for="searchbox">Search MPR</label>		
 		{* standard GSA fields *}
 		<input type="search" placeholder="Phrase, topic, politician..." value="" name="q" class="searchbox" />
 		<input type="hidden" value="mpr" name="site" />
