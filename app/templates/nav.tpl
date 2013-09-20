@@ -1,4 +1,4 @@
-<div id='nav-top' class='nav-open'> <!-- class='nav-open' -->
+<div id='nav-top' > <!-- class='nav-open' -->
 	
 	<a href='#' id='nav-top-opener'></a>
 
@@ -14,7 +14,9 @@
 						<a title="Minnesota Public Radio" href="http://minnesota.publicradio.org/">Minnesota Public Radio</a>
 					</li>
 
-					<li class="header">MPR Services</li>
+					<li class="header">
+						<span>MPR Services</span>
+					</li>
 
 					<li class="news">
 						<a title="Minnesota Public Radio News" href="http://minnesota.publicradio.org/features/">
@@ -61,10 +63,10 @@
 			</li>
 
 
-			<li id="nav-news-sections">
-				<a href="#" class="header" id="news-sections-header">Sections</a>
-				<ul>
-					<li><a href="#">Latest news</a></li>
+			<li id="nav-news-sections" class='nav-dropdown'>
+				<a href="#" class="nav-dropdown-header" id="news-sections-header">Sections</a>
+				<ul >
+					<li class="faux-group-start"><a href="#">Latest news</a></li>
 					<li><a href="#">Most shared</a></li>
 
 					<li><a href="#">MPR News Coverage</a></li>
@@ -77,9 +79,9 @@
 					<li><a href="#">Science</a></li>
 					<li><a href="#">Weather</a></li>
 
-					<li><a href="#">MPR News Blogs</a></li>
+					<li class="faux-group-start"><a href="#">MPR News Blogs</a></li>
 
-					<li class='header'><a href="#">Special coverage</a></li>
+					<li class='header'><span>Special coverage</span></li>
 					<li><a href="#">Mental Health Series</a></li>
 					<li><a href="#">Other thing</a></li>
 
@@ -91,15 +93,15 @@
 				</ul>
 			</li>
 
-			<li>
-				<a href="#">Membeship</a> 
+			<li class='nav-dropdown'>
+				<a href="#" class="nav-dropdown-header">Membeship</a> 
 			</li>
 
-			<li>
-				<a href="#">More</a>
+			<li class='nav-dropdown'>
+				<a href="#" class='nav-dropdown-header'>More</a>
 				<ul>
 					<li><a href="#">About MPR</a>
-						<ul>
+						<ul class='sub'>
 							<li><a href="#">Contact Info</a></li>
 							<li><a href="#">Stations</a></li>
 							<li><a href="#">Careers</a></li>
@@ -110,7 +112,7 @@
 
 					</li>
 					<li><a href="#">Support</a>
-						<ul>
+						<ul class='sub'>
 							<li><a href="#">Leadership circle</a></li>
 							<li><a href="#">Volunteer</a></li>
 							<li><a href="#">Donate a vehicle</a></li>
@@ -119,7 +121,7 @@
 						</ul>
 					</li>
 					<li><a href="#">Membership</a>
-						<ul>
+						<ul class='sub'>
 							<li><a href="#">Become a member</a></li>
 							<li><a href="#">Member accounts</a></li>
 							<li><a href="#">FAQ</a></li>
