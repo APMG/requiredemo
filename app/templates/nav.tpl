@@ -99,7 +99,7 @@
 				</li>
 
 				<li class='nav-dropdown' id="nav-more">
-					<a href="#" class='nav-dropdown-header'>More</a>
+					<a href="#" class='nav-dropdown-header' id='more-sections-header'>More</a>
 					<ul class='nav-sub'>
 						<li><a href="#">About MPR</a>
 							<ul class='sub'>
