@@ -45,7 +45,8 @@
 					margin-left: 0 !important; 
 					left: 0;
 					top: 54px;
-					background-color: rgba(0,255,0,0.5);
+					 background-color: rgba(0,255,0,0.5);
+					//background-color: #fff;
 					li{
 						display: inline-block;
 					}
@@ -108,4 +109,30 @@
 	display: block;
 	width: 100%;
 	border-top: @border;
+}
+
+/*
+ Move elements left 25 px to accomodate the paginators
+ */
+#nav-top-contribution{
+	right: 205px;
+}
+#nav-weather{
+	right: 85px;
+}
+#nav-search{
+	margin-right: 25px;
+	.searchbox{
+		height: 52px;
+	}
+	&.search-open,
+	&:hover,
+	&:focus,{
+		.searchbox{
+			margin-left: 240px;
+		}
+		.search-icon:before{
+			line-height: 50px;
+		}
+	}
 }
