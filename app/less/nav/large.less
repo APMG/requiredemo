@@ -18,21 +18,23 @@
 #nav-top-contribution{
 
 }
-
+#nav-list{
+	width: auto;
+	background: transparent;
+}
 
 #nav-list ul {
-	display: block;
-	position: static;
-	float: left;
-	margin-left: 220px;
-	width: 400px;
-	height: 50px;
-	padding: 0;
-	.transition(~"margin 0");
+	//float: left;
+	//padding: 0;
 	li{
 		display: none;
 		&.nav-dropdown{
-			display: inline;
+			display: inline-block;
+			margin-top: 0;
+			float: none;
+			width: auto;
+			border: none;
+			display: inline-block;
 			&:hover{
 				display: inline;
 				ul{
@@ -56,6 +58,8 @@
 		}
 		a.nav-dropdown-header{
 			display: inline-block;
+			padding: 9px 6px;
+			font-weight: normal;
 		}
 	}
 
@@ -71,19 +75,34 @@
 			margin: 0;
 			position: static;
 			padding-bottom: 0;
-			ul{ 
+			ul#nav-primary{ 
 				margin-left: 220px;
-				.transition(~"margin 0");
 			}
 		}
 		#nav-top-opener{
 			display: none;
 		}
 	}
+	ul#nav-primary{
+		min-width: 0;
+		display: block;
+		position: static;
+		float: left;
+		margin-left: 220px;
+		width: 400px;
+		height: 50px;
+		padding: 0;
+		text-align: left;
+	}
 }
 #nav-top-opener{
 	display: none !important;
 }
+// #nav-services, #nav-more, #nav-news-sections{
+// 	float: none;
+// 	width: auto;
+// 	border: none;
+// }
 
 #nav-faux-wrapper{
 	display: block;

@@ -1,5 +1,5 @@
 <nav id="mprnews-nav">
-	<div id='nav-top'> <!-- class='nav-open' -->
+	<div id='nav-top' class='nav-open'> <!-- class='nav-open' -->
 		
 		<a href='#' id='nav-top-opener'></a>
 
