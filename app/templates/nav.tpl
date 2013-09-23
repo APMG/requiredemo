@@ -1,16 +1,16 @@
 <nav id="mprnews-nav">
-	<div id='nav-top' > <!-- class='nav-open' -->
+	<div id='nav-top'> <!-- class='nav-open' -->
 		
 		<a href='#' id='nav-top-opener'></a>
 
 		<div id='nav-list'>
-			<ul>
+			<ul id='nav-primary'>
 				<li>
 					<a href="https://contribute.publicradio.org/contribute.php#web_nav_button" class="contribution-link">Give Now</a>
 				</li>
 
-				<li>
-					<ul>
+				<li id="nav-services">
+					<ul class='nav-sub'>
 						<li class="mpr">
 							<a title="Minnesota Public Radio" href="http://minnesota.publicradio.org/">Minnesota Public Radio</a>
 						</li>
@@ -21,26 +21,26 @@
 
 						<li class="news">
 							<a title="Minnesota Public Radio News" href="http://minnesota.publicradio.org/features/">
-								<span>MPR News</span>
+								MPR News
 							</a>
 						</li>
 
 						<li class="current">
 							<a title="The Current from Minnesota Public Radio" href="http://www.thecurrent.org/">
-								<span>The Current</span>
+								The Current
 							</a>
 						</li>
 
 						<li class="classical">
 							<a title="Classical Minnesota Public Radio" href="http://minnesota.publicradio.org/radio/services/cms/">
-								<span>Classical MPR</span>
+								Classical MPR
 							</a>
 						</li>
 
 
 						<li class="more-streams">
 							<a title="Classical Minnesota Public Radio" href="#">
-								<span>More Streams</span>
+								More Streams
 							</a>
 						</li>
 
@@ -66,7 +66,7 @@
 
 				<li id="nav-news-sections" class='nav-dropdown'>
 					<a href="#" class="nav-dropdown-header" id="news-sections-header">Sections</a>
-					<ul >
+					<ul class='nav-sub'>
 						<li class="faux-group-start"><a href="#">Latest news</a></li>
 						<li><a href="#">Most shared</a></li>
 
@@ -98,9 +98,9 @@
 					<a href="#" class="nav-dropdown-header">Membeship</a> 
 				</li>
 
-				<li class='nav-dropdown'>
+				<li class='nav-dropdown' id="nav-more">
 					<a href="#" class='nav-dropdown-header'>More</a>
-					<ul>
+					<ul class='nav-sub'>
 						<li><a href="#">About MPR</a>
 							<ul class='sub'>
 								<li><a href="#">Contact Info</a></li>
