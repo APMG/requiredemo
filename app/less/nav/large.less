@@ -41,8 +41,14 @@
 			width: auto;
 			border: none;
 			display: inline-block;
-			&:hover{
-				display: inline;
+			&:hover, &.nav-open{
+				display: inline; 
+				a.nav-dropdown-header{
+					background-color: #fff;
+					border-left: @border;
+					border-right: @border;
+					padding-bottom: 9px;
+				}
 				ul{
 					position: absolute;
 					display: block;
@@ -51,7 +57,9 @@
 					margin-left: 0 !important; 
 					left: 0;
 					top: 54px;
-					 background-color: rgba(0,255,0,0.5);
+					 background-color: #fff;
+					 border-bottom: @border;
+
 					//background-color: #fff;
 					li{
 						display: inline-block;
@@ -65,8 +73,10 @@
 		}
 		a.nav-dropdown-header{
 			display: inline-block;
-			padding: 9px 6px;
+			padding: 9px 6px 7px 6px;
 			font-weight: normal;
+			border-left: 2px solid #fff;
+			border-right: 2px solid #fff;
 		}
 	}
 
