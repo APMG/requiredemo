@@ -64,8 +64,9 @@
 				</li>
 
 
-				<li id="nav-news-sections" class='nav-dropdown nav-open'> <!-- nav-open -->
+				<li id="nav-news-sections" class='nav-dropdown '> <!-- nav-open -->
 					<a href="#" class="nav-dropdown-header" id="news-sections-header">Sections</a>
+					<div class='nav-sub-wrapper'>
 					<ul class='nav-sub'>
 						<li class="faux-group-start"><a href="#">Latest news</a></li>
 						<li><a href="#">Most shared</a></li>
@@ -92,15 +93,71 @@
 						<li><a href="#">All Things Considered</a></li>
 						<li><a href="#">More programs</a></li>
 					</ul>
+					</div>
 				</li>
 
 				<li class='nav-dropdown'>
 					<a href="#" class="nav-dropdown-header">Membeship</a> 
 				</li>
 
-				<li class='nav-dropdown' id="nav-more">
+				<li class='nav-dropdown' id="nav-more"> <!-- nav-open -->
 					<a href="#" class='nav-dropdown-header' id='more-sections-header'>More</a>
-					<ul class='nav-sub'>
+
+					<div class='nav-sub-wrapper'>
+					<!-- temporary -->
+					<ul class='nav-sub services'>
+				
+
+						<li class="header">
+							<span>MPR Services</span>
+						</li>
+						<li id="more-sub-primary-services">
+							<ul>
+								<li class="news">
+									<a title="Minnesota Public Radio News" href="http://minnesota.publicradio.org/features/">
+										MPR News
+									</a>
+								</li>
+
+								<li class="current">
+									<a title="The Current from Minnesota Public Radio" href="http://www.thecurrent.org/">
+										The Current
+									</a>
+								</li>
+
+								<li class="classical">
+									<a title="Classical Minnesota Public Radio" href="http://minnesota.publicradio.org/radio/services/cms/">
+										Classical MPR
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li id='more-sub-secondary-services'>
+							<ul>
+								<li class='nav-secondary'>
+									<a href="http://www.thecurrent.org/heartland">Radio Heartland</a>     
+								</li>
+
+								<li class='nav-secondary'>
+									<a href="http://www.thecurrent.org/local">Local Current </a> 
+								</li>
+
+								<li class='nav-secondary'>
+									<a href="http://www.thecurrent.org/wonderground">Wonderground Radio  </a>   
+								</li>
+
+								<li class='nav-secondary'>
+									<a href="http://minnesota.publicradio.org/radio/services/cms/choral/">Choral Classial</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<!-- /temporary -->
+
+					<ul class='nav-sub more'>
+						<li class="mpr">
+							<a title="Minnesota Public Radio" href="http://minnesota.publicradio.org/">Minnesota Public Radio</a>
+						</li>
 						<li><a href="#">About MPR</a>
 							<ul class='sub'>
 								<li><a href="#">Contact Info</a></li>
@@ -131,7 +188,7 @@
 						<li><a href="#">Events</a></li>
 						<li><a href="#">Shop</a></li>
 					</ul>
-
+					</div>
 				</li>
 			</ul>
 		</div>
