@@ -1,3 +1,13 @@
+
+
+/* debug for safari */
+
+#nav-more:hover{
+	a{ color: red !important;}
+	
+}
+
+
 #mprnews-nav{
 	position: relative;
 	margin: 0 auto;
@@ -30,8 +40,6 @@
 }
 
 #nav-list ul {
-	//float: left;
-	//padding: 0;
 	li{
 		display: none;
 		&.nav-dropdown{
@@ -41,8 +49,8 @@
 			width: auto;
 			border: none;
 			display: inline-block;
-			&:hover, &.nav-open{
-				display: inline; 
+			&.nav-open, &:hover{  				// this is where safari has trouble 
+			 	display: inline !important; 
 				div.nav-sub-wrapper{
 					position: absolute;
 					display: block;
@@ -50,9 +58,12 @@
 					margin-left: 0 !important; 
 					left: 0;
 					top: 54px;
-					 background-color: #fff;
-					 border-bottom: @border;
-					 padding: 10px 0 20px 15px;
+					background-color: #fff;
+					border-bottom: @border;
+					padding: 10px 0 20px 15px;
+					a:hover{
+						text-decoration: underline;
+					}
 				}
 
 				a.nav-dropdown-header{
@@ -62,62 +73,49 @@
 					padding-bottom: 9px;
 					color: @link-color-hover;
 				}
-				// div.nav-sub-wrapper{
-				// 	position: absolute;
-				// 	display: block;
-				// 	width: 100%;
-				// 	//height: 400px;
-				// 	margin-left: 0 !important; 
-				// 	left: 0;
-				// 	top: 54px;
-				// 	 background-color: #fff;
-				// 	 border-bottom: @border;
-				// 	 padding: 20px 0;
-				// 	//background-color: #fff;
-					ul{ 
-						display: block !important;
-						font-size: 0.95em; //16px
-						&.nav-sub{
+				ul{ 
+					display: block !important;
+					font-size: 0.95em; //16px
+					&.nav-sub{
+						float: left;
+						ul li{
+							width: 100%;
+						}					
+						#more-sub-primary-services{
+							width: 44%;
+						}
+						#more-sub-secondary-services{
+							width: 56%;
+							a{ font-weight: normal; }
+						}
+						&.services {
+							width: 39%;
+						}
+						&.more{ 
+							width: 61%;
+							padding-left: 20px;
+							border-left: @border;
+						}
+
+						li{
+							display: block;
+							width: 33.33%;
 							float: left;
-							ul li{
-								width: 100%;
-							}					
-							#more-sub-primary-services{
-								width: 44%;
-							}
-							#more-sub-secondary-services{
-								width: 56%;
-								a{ font-weight: normal; }
-							}
-							&.services {
-								width: 39%;
-							}
-							&.more{ 
-								width: 61%;
-								padding-left: 20px;
-								border-left: @border;
-							}
 
-							li{
-								display: block;
-								width: 33.33%;
-								float: left;
-
-							}
-							li.mpr, li.header{ width: 100%; padding-top: 0;}
 						}
-						&.sub{
-							li{
-								width: 100%;
-								display: block;
-								a{ font-weight: normal; }
-							}
+						li.mpr, li.header{ width: 100%; padding-top: 0;}
+					}
+					&.sub{
+						li{
+							width: 100%;
+							display: block;
+							a{ font-weight: normal; }
 						}
 					}
-
-					li{
-						display: inline-block;
-					}
+				}
+				li{
+					display: inline-block;
+				}
 				//}
 				ul.sub{
 					display: block;
@@ -126,9 +124,7 @@
 			li{
 			 	line-height: 1.8;
 			}
-			a:hover{
-				text-decoration: underline;
-			}
+
 		}
 		a.nav-dropdown-header{
 			display: inline-block;
@@ -173,7 +169,7 @@
 		background-color: transparent;
 	}
 }
-#news-sections-header, #more-sections-header{
+#news-sections-header, #more-sections-header, #members-sections-header{
 	&:after{
 		padding-left: 3px;
 		font-size: 10px;

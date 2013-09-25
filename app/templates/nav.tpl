@@ -96,15 +96,23 @@
 					</div>
 				</li>
 
-				<li class='nav-dropdown'>
-					<a href="#" class="nav-dropdown-header">Membeship</a> 
+				<li class='nav-dropdown' class='nav-members'>
+					<a href="#" class="nav-dropdown-header" id='members-sections-header'>Members</a> 
+					<div class='nav-sub-wrapper'>
+						<ul class='sub'>
+							<li><a href="http://minnesota.publicradio.org/support/member_benefits/">Member Benefits</a></li>
+							<li><a href="http://minnesota.publicradio.org/support/membership/sustaining_members.shtml">Sustaining Membership</a></li>
+							<li><a href="http://minnesota.publicradio.org/support/more-ways-to-give/">More Ways to Give</a></li>
+							<li><a href="http://minnesota.publicradio.org/about/contact/">Contact Us</a></li>
+							<li><a class="giveNowHeaderLink" href="https://contribute.publicradio.org/contribute.php?refId=default&amp;WT.mc_id=news_web_header_dropdown&amp;WT.mc_ev=click&amp;utm_campaign=membership_contribution&amp;utm_medium=web_header_dropdown&amp;utm_source=news&amp;utm_content=&amp;utm_term">Become a Member</a></li>
+						</ul>
+					</div>
 				</li>
 
-				<li class='nav-dropdown' id="nav-more"> <!-- nav-open -->
+				<li id="nav-more" class='nav-dropdown'> <!-- nav-open -->
 					<a href="#" class='nav-dropdown-header' id='more-sections-header'>More</a>
 
 					<div class='nav-sub-wrapper'>
-					<!-- temporary -->
 					<ul class='nav-sub services'>
 				
 
@@ -168,22 +176,6 @@
 								<li><a href="#">Press room</a></li>
 							</ul>
 
-						</li>
-						<li><a href="#">Support</a>
-							<ul class='sub'>
-								<li><a href="#">Leadership circle</a></li>
-								<li><a href="#">Volunteer</a></li>
-								<li><a href="#">Donate a vehicle</a></li>
-								<li><a href="#">Plannded giving</a></li>
-								<li><a href="#">Become a sponsor</a></li>
-							</ul>
-						</li>
-						<li><a href="#">Membership</a>
-							<ul class='sub'>
-								<li><a href="#">Become a member</a></li>
-								<li><a href="#">Member accounts</a></li>
-								<li><a href="#">FAQ</a></li>
-							</ul>
 						</li>
 						<li><a href="#">Events</a></li>
 						<li><a href="#">Shop</a></li>
