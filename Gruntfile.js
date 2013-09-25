@@ -62,7 +62,8 @@ module.exports = function (grunt) {
             extra: {
                 shiv: true,
                 mq: true,
-                history: true
+                history: true,
+                svg: true
             },
 
             // Minify
