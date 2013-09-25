@@ -64,7 +64,7 @@
 				</li>
 
 
-				<li id="nav-news-sections" class='nav-dropdown '> <!-- nav-open -->
+				<li id="nav-news-sections" class='nav-dropdown nav-open'> <!-- nav-open -->
 					<a href="#" class="nav-dropdown-header" id="news-sections-header">Sections</a>
 					<ul class='nav-sub'>
 						<li class="faux-group-start"><a href="#">Latest news</a></li>
