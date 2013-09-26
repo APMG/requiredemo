@@ -114,9 +114,21 @@
 						<ul class='sub'>
 							<li><a href="http://minnesota.publicradio.org/support/member_benefits/">Member Benefits</a></li>
 							<li><a href="http://minnesota.publicradio.org/support/membership/sustaining_members.shtml">Sustaining Membership</a></li>
-							<li><a href="http://minnesota.publicradio.org/support/more-ways-to-give/">More Ways to Give</a></li>
+
 							<li><a href="http://minnesota.publicradio.org/about/contact/">Contact Us</a></li>
 							<li><a class="giveNowHeaderLink" href="https://contribute.publicradio.org/contribute.php?refId=default&amp;WT.mc_id=news_web_header_dropdown&amp;WT.mc_ev=click&amp;utm_campaign=membership_contribution&amp;utm_medium=web_header_dropdown&amp;utm_source=news&amp;utm_content=&amp;utm_term">Become a Member</a></li>
+							<li><a href="http://minnesota.publicradio.org/support/more-ways-to-give/" class='header'>More Ways to Give</a>
+
+								<ul>
+									<li><a href="http://minnesota.publicradio.org/support/gift-membership/">Give a gift membership</a></li>
+									<li><a href="http://minnesota.publicradio.org/support/membership/employer_match.shtml">Employer matching gifts</a></li>
+									<li><a href="http://minnesota.publicradio.org/support/individual/leadership_circle.shtml">Leadership Circle</a></li>
+									<li><a href="http://mpr.giftlegacy.com/">Planned Giving</a></li>
+									<li><a href="http://minnesota.publicradio.org/support/vehicle/">Donate a vehicle</a></li>
+									<li><a href="http://www.firstgiving.com/minnesotapublicradio">Fundraise for MPR</a></li>
+
+								</ul>
+							</li>
 						</ul>
 					</div>
 				</li>
