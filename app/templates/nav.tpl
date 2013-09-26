@@ -15,65 +15,56 @@
 							<a title="Minnesota Public Radio" href="http://minnesota.publicradio.org/">Minnesota Public Radio</a>
 						</li>
 
-						<li class="header">
-							<span>MPR Services</span>
+						<li class='has-sub'>
+							<span class="header">MPR Services</span>
+							<ul>
+								<li class="news">
+									<a title="Minnesota Public Radio News" href="http://minnesota.publicradio.org/features/">MPR News</a>
+								</li>
+
+								<li class="current">
+									<a title="The Current from Minnesota Public Radio" href="http://www.thecurrent.org/">The Current</a>
+								</li>
+
+								<li class="classical">
+									<a title="Classical Minnesota Public Radio" href="http://minnesota.publicradio.org/radio/services/cms/">Classical MPR</a>
+								</li>
+
+								<li class="more-streams">
+									<a href="http://minnesota.publicradio.org/radio/">More Streams</a>
+								</li>
+
+								<li class='nav-secondary'>
+									<a href="http://www.thecurrent.org/heartland">Radio Heartland</a>     
+								</li>
+
+								<li class='nav-secondary'>
+									<a href="http://www.thecurrent.org/local">Local Current </a> 
+								</li>
+
+								<li class='nav-secondary'>
+									<a href="http://www.thecurrent.org/wonderground">Wonderground Radio  </a>   
+								</li>
+
+								<li class='nav-secondary'>
+									<a href="http://minnesota.publicradio.org/radio/services/cms/choral/">Choral Classial</a>
+								</li>
+							</ul>
 						</li>
 
-						<li class="news">
-							<a title="Minnesota Public Radio News" href="http://minnesota.publicradio.org/features/">
-								MPR News
-							</a>
-						</li>
 
-						<li class="current">
-							<a title="The Current from Minnesota Public Radio" href="http://www.thecurrent.org/">
-								The Current
-							</a>
-						</li>
-
-						<li class="classical">
-							<a title="Classical Minnesota Public Radio" href="http://minnesota.publicradio.org/radio/services/cms/">
-								Classical MPR
-							</a>
-						</li>
-
-
-						<li class="more-streams">
-							<a title="Classical Minnesota Public Radio" href="#">
-								More Streams
-							</a>
-						</li>
-
-
-						<li class='nav-secondary'>
-							<a href="http://www.thecurrent.org/heartland">Radio Heartland</a>     
-						</li>
-
-						<li class='nav-secondary'>
-							<a href="http://www.thecurrent.org/local">Local Current </a> 
-						</li>
-
-						<li class='nav-secondary'>
-							<a href="http://www.thecurrent.org/wonderground">Wonderground Radio  </a>   
-						</li>
-
-						<li class='nav-secondary'>
-							<a href="http://minnesota.publicradio.org/radio/services/cms/choral/">Choral Classial</a>
-						</li>
 					</ul>
 				</li>
 
 
-				<li id="nav-news-sections" class='nav-dropdown  nav-open'> <!-- nav-open -->
+				<li id="nav-news-sections" class='nav-dropdown'> <!-- nav-open -->
 					<a href="#" class="nav-dropdown-header" id="news-sections-header">Sections</a>
 					<div class='nav-sub-wrapper'>
 					<ul class='nav-sub'>
 
-						
-						<li class="faux-group-start"><a href="#">Latest news</a></li>
-						<li><a href="#">Most shared</a></li>
 
-						<li><a href="#" class='header'>MPR News Coverage</a>
+
+						<li class='has-sub first'><span class='header'>MPR News Coverage</span>
 							<ul>
 								<li><a href="#">Arts &amp; Culture</a></li>
 								<li><a href="#">Business</a></li>
@@ -83,13 +74,11 @@
 								<li><a href="#">Leisure</a></li>
 								<li><a href="#">Science</a></li>
 								<li><a href="#">Weather</a></li>
+								<li><a href="#">MPR News Blogs</a></li>
 							</ul>
 						</li>
-						
 
-						<li class="faux-group-start"><a href="#">MPR News Blogs</a></li>
-
-						<li><span class='header'>Special coverage</span>
+						<li class='has-sub'><span class='header'>Special coverage</span>
 							<ul>
 								<li><a href="#">Mental Health Series</a></li>
 								<li><a href="#">Other thing</a></li>
@@ -97,7 +86,7 @@
 						</li>
 
 
-						<li><a href="#" class='header'>MPR News programs</a>
+						<li class='has-sub'><span class='header'>MPR News programs</span>
 							<ul>
 								<li><a href="#">Morning Edition</a></li>
 								<li><a href="#">The Daily Circuit</a></li>
@@ -106,7 +95,7 @@
 							</ul>
 						</li>
 
-						<li><a href="#" class='header'>MPR News resources</a>
+						<li class='has-sub'><span class='header'>MPR News resources</span>
 							<ul>
 								<li><a href="#">Program schedule</a></li>
 								<li><a href="#">Station directory</a></li>
