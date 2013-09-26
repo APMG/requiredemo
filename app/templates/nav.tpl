@@ -66,15 +66,15 @@
 
 						<li class='has-sub first'><span class='header'>MPR News Coverage</span>
 							<ul>
-								<li><a href="#">Arts &amp; Culture</a></li>
-								<li><a href="#">Business</a></li>
-								<li><a href="#">Education</a></li>
-								<li><a href="#">Environment</a></li>
-								<li><a href="#">Health</a></li>
+								<li><a href="http://minnesota.publicradio.org/collections/arts_culture/">Arts &amp; Culture</a></li>
+								<li><a href="http://minnesota.publicradio.org/collections/business/">Business</a></li>
+								<li><a href="http://minnesota.publicradio.org/collections/education/">Education</a></li>
+								<li><a href="http://minnesota.publicradio.org/collections/environment/">Environment</a></li>
+								<li><a href="http://minnesota.publicradio.org/collections/health/">Health</a></li>
 								<li><a href="#">Leisure</a></li>
-								<li><a href="#">Science</a></li>
-								<li><a href="#">Weather</a></li>
-								<li><a href="#">MPR News Blogs</a></li>
+								<li><a href="http://minnesota.publicradio.org/collections/science/">Science</a></li>
+								<li><a href="http://minnesota.publicradio.org/collections/weather/">Weather</a></li>
+								<li><a href="http://minnesota.publicradio.org/collections/weblogs/">MPR News Blogs</a></li>
 							</ul>
 						</li>
 
@@ -88,19 +88,19 @@
 
 						<li class='has-sub'><span class='header'>MPR News programs</span>
 							<ul>
-								<li><a href="#">Morning Edition</a></li>
-								<li><a href="#">The Daily Circuit</a></li>
-								<li><a href="#">All Things Considered</a></li>
-								<li><a href="#">More programs</a></li>
+								<li><a href="http://minnesota.publicradio.org/radio/programs/morning_edition/">Morning Edition</a></li>
+								<li><a href="http://minnesota.publicradio.org/radio/programs/daily_circuit/">The Daily Circuit</a></li>
+								<li><a href="http://minnesota.publicradio.org/radio/programs/all_things_considered/">All Things Considered</a></li>
+								<li><a href="http://minnesota.publicradio.org/radio/programs/">More programs</a></li>
 							</ul>
 						</li>
 
 						<li class='has-sub'><span class='header'>MPR News resources</span>
 							<ul>
-								<li><a href="#">Program schedule</a></li>
-								<li><a href="#">Station directory</a></li>
+								<li><a href="http://minnesota.publicradio.org/radio/services/nis/schedule/">Program schedule</a></li>
+								<li><a href="http://minnesota.publicradio.org/radio/stations/">Station directory</a></li>
 								<li><a href="#">Hourly newscast</a></li>
-								<li><a href="#">Archive</a></li>
+								<li><a href="http://archive.mprnews.org/">Archive</a></li>
 							</ul>
 						</li>
 
@@ -163,7 +163,7 @@
 								</li>
 
 								<li class='nav-secondary'>
-									<a href="http://www.thecurrent.org/wonderground">Wonderground Radio  </a>   
+									<a href="http://www.thecurrent.org/wonderground">Wonderground Radio</a>   
 								</li>
 
 								<li class='nav-secondary'>
@@ -177,20 +177,20 @@
 						<li class="mpr" id='more-sub-mpr-header'>
 							<a title="Minnesota Public Radio" href="http://minnesota.publicradio.org/">Minnesota Public Radio</a>
 						</li>
-						<li id="nav-about"><a href="#">About MPR</a>
+						<li id="nav-about"><a href="http://minnesota.publicradio.org/about/">About MPR</a>
 							<ul class='sub' id='nav-about-sub'>
-								<li><a href="#">Contact Info</a></li>
-								<li><a href="#">Stations</a></li>
-								<li><a href="#">Careers</a></li>
-								<li><a href="#">Staff directory</a></li>
-								<li><a href="#">Company information</a></li>
-								<li><a href="#">Press room</a></li>
+								<li><a href="http://minnesota.publicradio.org/about/contact/">Contact Info</a></li>
+								<li><a href="http://minnesota.publicradio.org/radio/stations/">Stations</a></li>
+								<li><a href="http://americanpublicmedia.iapplicants.com/">Careers</a></li>
+								<li><a href="http://minnesota.publicradio.org/about/people/">Staff directory</a></li>
+								<li><a href="http://minnesota.publicradio.org/about/mpr/">Company information</a></li>
+								<li><a href="http://minnesota.publicradio.org/about/press/">Press room</a></li>
 							</ul>
 
 						</li>
 						<li id="sub-secondary-members"><a href="http://minnesota.publicradio.org/support/" >Members</a></li>
-						<li><a href="#">Events</a></li>
-						<li><a href="#">Shop</a></li>
+						<li><a href="http://minnesota.publicradio.org/events/">Events</a></li>
+						<li><a href="http://minnesota.publicradio.org/support/shop/">Shop</a></li>
 					</ul>
 					</div>
 				</li>
