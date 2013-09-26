@@ -1,5 +1,5 @@
 <nav id="mprnews-nav">
-	<div id='nav-top' > <!-- class='nav-open' -->
+	<div id='nav-top' class='nav-open'> <!-- class='nav-open' -->
 		
 		<a href='#' id='nav-top-opener'></a>
 
@@ -64,40 +64,63 @@
 				</li>
 
 
-				<li id="nav-news-sections" class='nav-dropdown '> <!-- nav-open -->
+				<li id="nav-news-sections" class='nav-dropdown  nav-open'> <!-- nav-open -->
 					<a href="#" class="nav-dropdown-header" id="news-sections-header">Sections</a>
 					<div class='nav-sub-wrapper'>
 					<ul class='nav-sub'>
+
+						
 						<li class="faux-group-start"><a href="#">Latest news</a></li>
 						<li><a href="#">Most shared</a></li>
 
-						<li><a href="#">MPR News Coverage</a></li>
-						<li><a href="#">Arts &amp; Culture</a></li>
-						<li><a href="#">Business</a></li>
-						<li><a href="#">Education</a></li>
-						<li><a href="#">Environment</a></li>
-						<li><a href="#">Health</a></li>
-						<li><a href="#">Leisure</a></li>
-						<li><a href="#">Science</a></li>
-						<li><a href="#">Weather</a></li>
+						<li><a href="#" class='header'>MPR News Coverage</a>
+							<ul>
+								<li><a href="#">Arts &amp; Culture</a></li>
+								<li><a href="#">Business</a></li>
+								<li><a href="#">Education</a></li>
+								<li><a href="#">Environment</a></li>
+								<li><a href="#">Health</a></li>
+								<li><a href="#">Leisure</a></li>
+								<li><a href="#">Science</a></li>
+								<li><a href="#">Weather</a></li>
+							</ul>
+						</li>
+						
 
 						<li class="faux-group-start"><a href="#">MPR News Blogs</a></li>
 
-						<li class='header'><span>Special coverage</span></li>
-						<li><a href="#">Mental Health Series</a></li>
-						<li><a href="#">Other thing</a></li>
+						<li><span class='header'>Special coverage</span>
+							<ul>
+								<li><a href="#">Mental Health Series</a></li>
+								<li><a href="#">Other thing</a></li>
+							</ul>
+						</li>
 
-						<li class='header'><a href="#">MPR News programs</a></li>
-						<li><a href="#">Morning Edition</a></li>
-						<li><a href="#">The Daily Circuit</a></li>
-						<li><a href="#">All Things Considered</a></li>
-						<li><a href="#">More programs</a></li>
+
+						<li><a href="#" class='header'>MPR News programs</a>
+							<ul>
+								<li><a href="#">Morning Edition</a></li>
+								<li><a href="#">The Daily Circuit</a></li>
+								<li><a href="#">All Things Considered</a></li>
+								<li><a href="#">More programs</a></li>
+							</ul>
+						</li>
+
+						<li><a href="#" class='header'>MPR News resources</a>
+							<ul>
+								<li><a href="#">Program schedule</a></li>
+								<li><a href="#">Station directory</a></li>
+								<li><a href="#">Hourly newscast</a></li>
+								<li><a href="#">Archive</a></li>
+							</ul>
+						</li>
+
 					</ul>
 					</div>
 				</li>
 
-				<li class='nav-dropdown' class='nav-members'>
-					<a href="#" class="nav-dropdown-header" id='members-sections-header'>Members</a> 
+				<li id='nav-members' class='nav-dropdown'>
+					<a href="http://minnesota.publicradio.org/support/" class="nav-dropdown-header" id='members-sections-header'>Members</a> 
 					<div class='nav-sub-wrapper'>
 						<ul class='sub'>
 							<li><a href="http://minnesota.publicradio.org/support/member_benefits/">Member Benefits</a></li>
@@ -116,7 +139,7 @@
 					<ul class='nav-sub services'>
 				
 
-						<li class="header">
+						<li class="header" id="more-sub-primary-services-header">
 							<span>MPR Services</span>
 						</li>
 						<li id="more-sub-primary-services">
@@ -162,11 +185,11 @@
 					</ul>
 
 					<ul class='nav-sub more'>
-						<li class="mpr">
+						<li class="mpr" id='more-sub-mpr-header'>
 							<a title="Minnesota Public Radio" href="http://minnesota.publicradio.org/">Minnesota Public Radio</a>
 						</li>
-						<li><a href="#">About MPR</a>
-							<ul class='sub'>
+						<li id="nav-about"><a href="#">About MPR</a>
+							<ul class='sub' id='nav-about-sub'>
 								<li><a href="#">Contact Info</a></li>
 								<li><a href="#">Stations</a></li>
 								<li><a href="#">Careers</a></li>
@@ -176,6 +199,7 @@
 							</ul>
 
 						</li>
+						<li id="sub-secondary-members"><a href="http://minnesota.publicradio.org/support/" >Members</a></li>
 						<li><a href="#">Events</a></li>
 						<li><a href="#">Shop</a></li>
 					</ul>
