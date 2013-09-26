@@ -30,7 +30,7 @@
 									<a title="Classical Minnesota Public Radio" href="http://minnesota.publicradio.org/radio/services/cms/">Classical MPR</a>
 								</li>
 
-								<li class="more-streams">
+								<li id="more-streams">
 									<a href="http://minnesota.publicradio.org/radio/">More Streams</a>
 								</li>
 
@@ -57,7 +57,7 @@
 				</li>
 
 
-				<li id="nav-news-sections" class='nav-dropdown'> <!-- nav-open -->
+				<li id="nav-news-sections" class='nav-dropdown '> <!-- nav-open -->
 					<a href="#" class="nav-dropdown-header" id="news-sections-header">Sections</a>
 					<div class='nav-sub-wrapper'>
 					<ul class='nav-sub'>
