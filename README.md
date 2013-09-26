@@ -12,11 +12,11 @@ Pre-requisites
   
         curl -sS https://getcomposer.org/installer | php
 
-* [grunt](http://gruntjs.com/getting-started)
+* [grunt](http://gruntjs.com/getting-started) (may require sudo)
 
         npm install -g grunt-cli
         
-* [bower](http://bower.io/)
+* [bower](http://bower.io/) (may require sudo)
 
         npm install -g bower
 
