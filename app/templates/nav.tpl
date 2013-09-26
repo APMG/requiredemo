@@ -160,7 +160,6 @@
 							</ul>
 						</li>
 					</ul>
-					<!-- /temporary -->
 
 					<ul class='nav-sub more'>
 						<li class="mpr">

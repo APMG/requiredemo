@@ -3,6 +3,10 @@ define(["jquery"], function () {
 	;(function ( $, window, document, undefined ) {
 		 $.noop();
 		 console.log('doing nav stuff');
+
+		 // quick and dirty to make it work in safari >= 6, because it screws up :hover for some reason
+		 $('.nav-dropdown').bind('mouseenter mouseleave',function(){ $(this).toggleClass('nav-open'); });
+
 		 /*
 		  * TODO:
 		  * Impliment search similar to this
