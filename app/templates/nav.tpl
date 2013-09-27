@@ -1,12 +1,12 @@
 <nav id="mprnews-nav">
-	<div id='nav-top' class=''> <!-- class='nav-open' -->
+	<div id='nav-top'> <!-- class='nav-open' -->
 		
 		<a href='#' id='nav-top-opener'></a>
 
 		<div id='nav-list'>
 			<ul id='nav-primary'>
-				<li>
-					<a href="https://contribute.publicradio.org/contribute.php#web_nav_button" class="contribution-link">Give Now</a>
+				<li id="nav-mpr-give">
+					<a title="Minnesota Public Radio" href="http://minnesota.publicradio.org/" class='mpr'>Minnesota Public Radio</a> <a href="https://contribute.publicradio.org/contribute.php#web_nav_button" class="contribution-link">Give Now</a>
 				</li>
 
 				<li id="nav-services">
@@ -15,7 +15,7 @@
 							<a title="Minnesota Public Radio" href="http://minnesota.publicradio.org/">Minnesota Public Radio</a>
 						</li>
 
-						<li class='has-sub'>
+						<li class='has-sub first'>
 							<span class="header">MPR Services</span>
 							<ul>
 								<li class="news">
@@ -57,7 +57,7 @@
 				</li>
 
 
-				<li id="nav-news-sections" class='nav-dropdown '> <!-- nav-open -->
+				<li id="nav-news-sections" class='nav-dropdown'> <!-- nav-open -->
 					<a href="#" class="nav-dropdown-header" id="news-sections-header">Sections</a>
 					<div class='nav-sub-wrapper'>
 					<ul class='nav-sub'>
@@ -108,16 +108,12 @@
 					</div>
 				</li>
 
-				<li id='nav-members' class='nav-dropdown'>
+				<li id='nav-members' class='nav-dropdown'> <!--  nav-open -->
 					<a href="http://minnesota.publicradio.org/support/" class="nav-dropdown-header" id='members-sections-header'>Members</a> 
 					<div class='nav-sub-wrapper'>
 						<ul class='sub'>
-							<li><a href="http://minnesota.publicradio.org/support/member_benefits/">Member Benefits</a></li>
-							<li><a href="http://minnesota.publicradio.org/support/membership/sustaining_members.shtml">Sustaining Membership</a></li>
 
-							<li><a href="http://minnesota.publicradio.org/about/contact/">Contact Us</a></li>
-							<li><a class="giveNowHeaderLink" href="https://contribute.publicradio.org/contribute.php?refId=default&amp;WT.mc_id=news_web_header_dropdown&amp;WT.mc_ev=click&amp;utm_campaign=membership_contribution&amp;utm_medium=web_header_dropdown&amp;utm_source=news&amp;utm_content=&amp;utm_term">Become a Member</a></li>
-							<li><a href="http://minnesota.publicradio.org/support/more-ways-to-give/" class='header'>More Ways to Give</a>
+							<li class='has-sub' id="nav-members-give-sub"><a href="http://minnesota.publicradio.org/support/more-ways-to-give/" class='header'>More Ways to Give</a>
 
 								<ul>
 									<li><a href="http://minnesota.publicradio.org/support/gift-membership/">Give a gift membership</a></li>
@@ -129,12 +125,19 @@
 
 								</ul>
 							</li>
+
+							<li><a href="http://minnesota.publicradio.org/support/member_benefits/">Member Benefits</a></li>
+							<li><a href="http://minnesota.publicradio.org/support/membership/sustaining_members.shtml">Sustaining Membership</a></li>
+
+							<li><a href="http://minnesota.publicradio.org/about/contact/">Contact Us</a></li>
+							<li><a class="giveNowHeaderLink" href="https://contribute.publicradio.org/contribute.php?refId=default&amp;WT.mc_id=news_web_header_dropdown&amp;WT.mc_ev=click&amp;utm_campaign=membership_contribution&amp;utm_medium=web_header_dropdown&amp;utm_source=news&amp;utm_content=&amp;utm_term">Become a Member</a></li>
+							
 						</ul>
 					</div>
 				</li>
 
 				<li id="nav-more" class='nav-dropdown'> <!-- nav-open -->
-					<a href="#" class='nav-dropdown-header' id='more-sections-header'>More</a>
+					<a href="http://minnesota.publicradio.org/about/" class='nav-dropdown-header' id='more-sections-header'>More</a>
 
 					<div class='nav-sub-wrapper'>
 					<ul class='nav-sub services'>

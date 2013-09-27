@@ -30,7 +30,6 @@
 	li{
 		display: none;
 		&.nav-dropdown{
-			display: inline-block;
 			margin-top: 0;
 			float: none;
 			width: auto;
@@ -57,8 +56,9 @@
 					background-color: #fff;
 					border-left: @border;
 					border-right: @border;
-					padding-bottom: 9px;
+					padding: 9px 10px 9px 12px;
 					color: @link-color-hover;
+					display: inline-block;
 				}
 				ul{ 
 					display: block !important;
@@ -93,6 +93,7 @@
 							width: 33.33%;
 							float: left;
 						}
+						li.has-sub{ margin-top: 0;}
 						li.mpr, li.header{ width: 100%; padding-top: 0;}
 					}
 					&.sub{
@@ -121,6 +122,21 @@
 				ul.sub{
 					display: block;
 				}
+
+				&#nav-members{
+					a.header{ font-weight: bold;}
+					li {
+						width: 40%;
+					}
+					.has-sub{ 
+						width: 60%;
+						float: right;
+						li{ 
+							width: 50%;
+							float: left;
+						}
+					}
+				}
 			}
 			li{
 			 	line-height: 1.8;
@@ -129,7 +145,7 @@
 		}
 		a.nav-dropdown-header{
 			display: inline-block;
-			padding: 9px 10px 7px 12px;
+			padding: 9px 10px 6px 12px;
 			font-weight: normal;
 			border-left: 2px solid #fff;
 			border-right: 2px solid #fff;
@@ -171,6 +187,18 @@
 	a:hover{
 		background-color: transparent;
 	}
+	#nav-news-sections, #nav-more{
+		width: auto;
+		float: none;
+		border: 0;
+	}
+	li #more-sections-header{
+		border-bottom: 0;
+		display: inline-block;
+		line-height: 2em;
+		margin-top: 0;
+		padding-left: 10px;
+	}
 }
 #news-sections-header, #more-sections-header, #members-sections-header{
 	&:after{
@@ -186,8 +214,9 @@
 		line-height: 1;
 		-webkit-font-smoothing: antialiased;
 	}
-
 }
+
+
 #nav-top-opener{
 	display: none !important;
 }

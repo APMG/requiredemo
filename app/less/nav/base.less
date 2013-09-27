@@ -42,18 +42,9 @@
 	}
 
 } 
-//keeping this selector un-nested in less to generate simpler selectors
-
-// #nav-news-sections{
-// 	// .header.secondary{  //hide section title on mobile
-// 	// 	display: none;
-// 	// }
-// }
-
 
 
 #nav-top{
-	//position: absolute;
 	.transition(~"margin 0");
 	a.contribution-link{
 		display: inline-block;
@@ -63,8 +54,9 @@
 		display: none;
 		width: 100%;
 		padding: 10px;
-		//border-top: @border;
-		
+		&#nav-primary{
+			.clearfix();
+		}
 	}
 	li{
 		text-align: left;
@@ -79,8 +71,17 @@
 			}
 		}
 		span.header{ 
-			padding-left: 10px; 
 			color: @context-text;
+			margin: 5px 10px 0;
+		}
+		span.header, #more-sections-header{ 
+			border-bottom: @border;
+			border-bottom-color: @black-10;
+			display: block;
+			line-height: 1.5;
+			font-size: 1em;
+			margin: 5px 10px 0;
+			padding-left: 0;
 		}
 		li.header{
 			padding: 10px 10px 0 0;
@@ -149,7 +150,13 @@
 	}
 	.nav-dropdown-header{ display: none;}
 	#nav-news-sections{
-		//.header a{ font-weight: bold;}
+		
+		width: 54%;
+		float: left;
+		border-right: @border;
+		&.nav-dropdown{ margin-top: 0;}
+
+
 		a{
 			font-weight: normal;
 		}
@@ -159,19 +166,36 @@
 	}
 }
 ul.nav-sub li{
-	width: 50%;
+	width: 100%;
 	float: left;
 	&.mpr, &.header, &.has-sub{ width: 100%;}
-	&.has-sub{ margin-top: 10px;}
+	&.has-sub{ 
+		margin-top: 10px;
+		&.first{
+			margin-top: 0;
+		}
+	}
 }
 ul.nav-sub{
 	.clearfix();
 }
-#nav-services .header{ font-weight: bold;}
+#nav-services{
+	.header{ font-weight: bold;}
+	li.nav-sub{
+		margin-top: 10px;
+	}
+	li.mpr{
+		display: none;
+	}
+}
 #nav-more{ 
 	margin-top: 10px;
-	a.nav-dropdown-header{ display: block; color: @context-text;}  // make more header show up on mobile
 }
+#more-sections-header{ 
+	display: block; // make more header show up on mobile
+	color: @context-text;
+}  
+
 #more-sub-primary-services, 
 #more-sub-primary-services-header,
 #more-sub-mpr-header{ display: none;} //hide on small and medium
@@ -179,6 +203,11 @@ ul.nav-sub{
 	font-weight: normal;
 	color: lighten(@brand-primary, 15%); 
 }
+#nav-services, #nav-more{
+	float: right;
+	width: 46%;
+}
+
 
 #nav-top-opener{
 	display: block;
@@ -200,7 +229,12 @@ ul.nav-sub{
 
 // hide contribution link in mobile
 #nav-top-contribution{ display: none;}
-
+#nav-mpr-give{
+	a{ display: inline-block;}
+	.mpr{float: left; margin: 13px 0; font-size: 1em;}
+	.contribution-link { float: right;}
+	.clearfix();
+}
 
 #nav-weather{
 	display: none;
