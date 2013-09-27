@@ -113,42 +113,45 @@
 		THE HOVER EVENTS NEED TO BE REMOVED AND MADE MORE FRIENDLY TO TOUCH / NO-TOUCH DEVICES
 		THIS MEANS BREAKING IT OUT MORE LIKE WAS DONE WITH SEARCH
 	 */
-	&.nav-open, &:hover{ //&:hover
-		//width: 100%;
-		position: relative;
-		#nav-list{
-			//padding: 10px;
-			display: block;
-			
-			width: 100%;
-			margin-top: 42px;
-			.transition(~"margin 0");
-			position: absolute;
-			z-index: 30;
-			padding-bottom: 10px;
-			ul{
-				display: block;
-				//border-top: @border;
-				&.sub{
-					display: none;
-				}
-			}
-		}
-		#nav-primary{
-			background-color: #fff;
-			padding: 0 0 1em 0;
-			margin: 0;
-		}
-		#nav-top-opener{
-			height: 42px;
-			margin-top: 0px;
-			background-position: 6px 10px;
-			background-color: white;
-			background-image: url('/img/close.svg');
-			//margin-left: 0;
-		}
+	
 
-	}
+
+	// &.nav-open, &:hover{ //&:hover
+	// 	//width: 100%;
+	// 	position: relative;
+	// 	#nav-list{
+	// 		//padding: 10px;
+	// 		display: block;
+			
+	// 		width: 100%;
+	// 		margin-top: 42px;
+	// 		.transition(~"margin 0");
+	// 		position: absolute;
+	// 		z-index: 30;
+	// 		padding-bottom: 10px;
+	// 		ul{
+	// 			display: block;
+	// 			//border-top: @border;
+	// 			&.sub{
+	// 				display: none;
+	// 			}
+	// 		}
+	// 	}
+	// 	#nav-primary{
+	// 		background-color: #fff;
+	// 		padding: 0 0 1em 0;
+	// 		margin: 0;
+	// 	}
+	// 	#nav-top-opener{
+	// 		height: 42px;
+	// 		margin-top: 0px;
+	// 		background-position: 6px 10px;
+	// 		background-color: white;
+	// 		background-image: url('/img/close.svg');
+	// 		//margin-left: 0;
+	// 	}
+
+	// }
 	.nav-dropdown{
 		//margin-top: 10px;
 		font-weight: bold;
@@ -170,6 +173,55 @@
 		font-size: 1.14em; //16px
 	}
 }
+
+.touch{
+	.nav-open-mixin(~".nav-open");
+}
+.no-touch{
+	.nav-open-mixin(~":hover");
+}
+
+.nav-open-mixin(@selector){
+	#nav-top {
+		&@{selector} { //&:hover
+			//width: 100%;
+			position: relative;
+			#nav-list{
+				//padding: 10px;
+				display: block;
+				
+				width: 100%;
+				margin-top: 42px;
+				.transition(~"margin 0");
+				position: absolute;
+				z-index: 30;
+				padding-bottom: 10px;
+				ul{
+					display: block;
+					//border-top: @border;
+					&.sub{
+						display: none;
+					}
+				}
+			}
+			#nav-primary{
+				background-color: #fff;
+				padding: 0 0 1em 0;
+				margin: 0;
+			}
+			#nav-top-opener{
+				height: 42px;
+				margin-top: 0px;
+				background-position: 6px 10px;
+				background-color: white;
+				background-image: url('/img/close.svg');
+				//margin-left: 0;
+			}
+		}
+	}
+}
+
+
 ul.nav-sub li{
 	width: 100%;
 	float: left;
