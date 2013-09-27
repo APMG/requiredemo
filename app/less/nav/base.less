@@ -109,7 +109,11 @@
 			background-color: @light-blue;
 		}
 	}
-	&:hover, &.nav-open{
+	/*
+		THE HOVER EVENTS NEED TO BE REMOVED AND MADE MORE FRIENDLY TO TOUCH / NO-TOUCH DEVICES
+		THIS MEANS BREAKING IT OUT MORE LIKE WAS DONE WITH SEARCH
+	 */
+	&.nav-open, &:hover{ //&:hover
 		//width: 100%;
 		position: relative;
 		#nav-list{
@@ -140,6 +144,7 @@
 			margin-top: 0px;
 			background-position: 6px 10px;
 			background-color: white;
+			background-image: url('/img/close.svg');
 			//margin-left: 0;
 		}
 

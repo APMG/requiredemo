@@ -31,4 +31,4 @@ requirejs.config({
 requirejs(["app/pjax"]);            // handles links
 requirejs(["app/mediaplayer"]);     // handles media player
 requirejs(["app/paginators"]);      // handles prev/next pagination
-requirejs(["app/nav"]);             // for navigational bar
+requirejs(["app/nav"], function(nav){ nav.init(); });             // for navigational bar
