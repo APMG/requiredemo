@@ -71,7 +71,7 @@ Then change the `SLIM_MODE` in public/.htaccess:
 
     SetEnv SLIM_MODE production 
 
-Be careful not to commit this change to version unless intended.
+Be careful not to commit this change to version control unless intended.
 
 Testing
 -------
