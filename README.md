@@ -26,7 +26,7 @@ Installation
 First, clone the project to someplace on your computer that you can serve to a browser using Apache/MAMP.
         
         cd ~/Sites/
-        git clone https://github.com/APMG/requiredemo.git
+        git clone git@github.com:APMG/requiredemo.git
 
 Install required grunt, bower, and composer packages:
       
