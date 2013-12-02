@@ -1,4 +1,10 @@
-This is at test project to introduce myself to require.js, grunt, bower, composer, and other deploy / architecture tricks. We are planning to use these tools to facilitate the MPRNews redesign. 
+This is a test project to combine the following into a development and deployment workflow:
+* require.js
+* slim framework
+* composer
+* jquery.pjax
+* grunt
+* bower
 
 
 Setup
